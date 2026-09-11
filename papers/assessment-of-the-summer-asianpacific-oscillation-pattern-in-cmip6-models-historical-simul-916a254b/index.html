@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta name="robots" content="noindex,nofollow">
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>CMIP6 模式对夏季亚洲–太平洋涛动型的评估：历史模拟与未来预估｜Assessment of the summer Asian–Pacific Oscillation pattern in CMIP6 models: historical simulations and future projections</title>
+<style>
+  :root { --fg:#1a1a1a; --muted:#666; --accent:#8a1f1f; --line:#ddd; --en:#555; }
+  * { box-sizing: border-box; }
+  body { font-family: -apple-system, "Songti SC", "Noto Serif CJK SC", "Source Han Serif SC", serif;
+        color: var(--fg); max-width: 980px; margin: 0 auto; padding: 24px 20px 80px; line-height: 1.85; }
+  header.doc { border-bottom: 2px solid var(--accent); padding-bottom: 16px; margin-bottom: 8px; }
+  h1 { font-size: 1.5rem; line-height: 1.5; margin: 0 0 6px; }
+  h1 .en-t { display: block; font-size: 0.95rem; color: var(--muted); font-weight: normal; font-style: italic; }
+  .meta { color: var(--muted); font-size: 0.9rem; }
+  .controls { position: sticky; top: 0; background: #fff; padding: 10px 0; border-bottom: 1px solid var(--line);
+              margin-bottom: 18px; z-index: 10; }
+  button { font-size: 0.95rem; padding: 6px 16px; margin-right: 8px; border: 1px solid var(--accent);
+           background: #fff; color: var(--accent); border-radius: 6px; cursor: pointer; }
+  button.active { background: var(--accent); color: #fff; }
+  h2 { font-size: 1.2rem; margin: 34px 0 12px; border-left: 4px solid var(--accent); padding-left: 10px; }
+  h2 .he { color: var(--muted); font-size: 0.85em; font-weight: normal; }
+  .pair { margin: 0 0 14px; }
+  .pair p { margin: 0; }
+  .pair .en { display: none; }
+  body.show-en .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  body.show-en .pair .en { display: block; color: var(--en); font-size: 0.92em; border-left: 2px solid var(--line); padding-left: 12px; }
+  @media (max-width: 760px) {
+    body.show-en .pair { display: block; }
+    body.show-en .pair .en { border-left: none; border-top: 1px dashed var(--line); padding-left: 0; margin-top: 4px; }
+  }
+  figure { margin: 22px 0; text-align: center; }
+  figure img { max-width: 100%; height: auto; border: 1px solid var(--line); }
+  figcaption { text-align: left; font-size: 0.92rem; color: #333; margin-top: 8px; }
+  figcaption .pair { margin-bottom: 6px; }
+  .table-block { margin: 22px 0; overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.88rem; }
+  th, td { border-bottom: 1px solid var(--line); padding: 4px 10px; text-align: left; white-space: nowrap; }
+  thead th { border-top: 2px solid var(--fg); border-bottom: 1px solid var(--fg); }
+  tbody tr:last-child td { border-bottom: 2px solid var(--fg); }
+</style>
+</head>
+<body>
+<header class="doc">
+  <h1>CMIP6 模式对夏季亚洲–太平洋涛动型的评估：历史模拟与未来预估<span class="en-t">Assessment of the summer Asian–Pacific Oscillation pattern in CMIP6 models: historical simulations and future projections</span></h1>
+  <p class="meta">Wei Hua · Changji Xia · Qin Hu · Kaiqing Yang · Guangzhou Fan ｜ 《理论及应用气候学》Theoretical and Applied Climatology (2024) 155:1067–1079 ｜ DOI: 10.1007/s00704-023-04687-8</p>
+</header>
+<div class="controls">
+  <button id="zh-only" type="button" class="active">仅中文</button>
+  <button id="bilingual" type="button">中英对照</button>
+</div>
+<section>
+<div class="pair" data-id="p01-s01">
+  <p class="zh">《理论及应用气候学》（2024）155 卷：1067–1079 页 https://doi.org/10.1007/s00704-023-04687-8</p>
+  <p class="en">Theoretical and Applied Climatology (2024) 155:1067–1079 https://doi.org/10.1007/s00704-023-04687-8</p>
+</div>
+<div class="pair" data-id="p02-s01">
+  <p class="zh">研究论文</p>
+  <p class="en">RESEARCH</p>
+</div>
+<div class="pair" data-id="p03-s01">
+  <p class="zh">CMIP6 模式对夏季亚洲–太平洋涛动型的评估：历史模拟与未来预估</p>
+  <p class="en">Assessment of the summer Asian–Pacific Oscillation pattern in CMIP6 models: historical simulations and future projections</p>
+</div>
+<div class="pair" data-id="p04-s01">
+  <p class="zh">Wei Hua¹·²·³ · Changji Xia¹·⁴ · Qin Hu¹ · Kaiqing Yang¹ · Guangzhou Fan²·³</p>
+  <p class="en">Wei Hua1,2,3 · Changji Xia1,4 · Qin Hu1 · Kaiqing Yang1 · Guangzhou Fan2,3</p>
+</div>
+<div class="pair" data-id="p05-s01">
+  <p class="zh">2022 年 10 月 27 日收稿 / 2023 年 9 月 24 日接受 / 2023 年 10 月 3 日在线发表 © 作者 2023，独家授权予 Springer-Verlag GmbH Austria（Springer Nature 旗下）</p>
+  <p class="en">Received: 27 October 2022 / Accepted: 24 September 2023 / Published online: 3 October 2023 © The Author(s), under exclusive licence to Springer-Verlag GmbH Austria, part of Springer Nature 2023</p>
+</div>
+<div class="pair" data-id="p06-s01">
+  <p class="zh">* 通讯作者：Qin Hu，hq@cuit.edu.cn</p>
+  <p class="en">* Qin Hu hq@cuit.edu.cn</p>
+</div>
+<div class="pair" data-id="p07-s01">
+  <p class="zh">1 成都信息工程大学大气科学学院，中国四川省成都市 610225</p>
+  <p class="en">1 School of Atmospheric Sciences, Chengdu University of Information Technology, Sichuan Province, Chengdu 610225, China</p>
+</div>
+<div class="pair" data-id="p08-s01">
+  <p class="zh">2 四川省高原大气与环境重点实验室，中国四川省成都市 610225</p>
+  <p class="en">2 Plateau Atmosphere and Environment Key Laboratory of Sichuan Province, Sichuan Province, Chengdu 610225, China</p>
+</div>
+<div class="pair" data-id="p09-s01">
+  <p class="zh">3 四川省气象灾害预测预警工程实验室，中国四川省成都市 610225</p>
+  <p class="en">3 Meteorological Disaster Prediction and Warning Engineering Laboratory of Sichuan Province, Sichuan Province, Chengdu 610225, China</p>
+</div>
+<div class="pair" data-id="p10-s01">
+  <p class="zh">4 镇远县气象局，中国贵州省镇远县 557700</p>
+  <p class="en">4 Zhenyuan Meteorological Bureau, Zhenyuan 557700, Guizhou Province, China</p>
+</div>
+
+</section>
+<h2><span class="hz">摘要</span><span class="he"> Abstract</span></h2>
+<section>
+<div class="pair" data-id="p11-s01">
+  <p class="zh">亚洲–太平洋涛动（APO）是主导亚洲–北太平洋地区的一种纬向遥相关型，其变率很大，并对区域和全球尺度的气候、经济、社会与环境产生显著影响。</p>
+  <p class="en">The Asian–Pacific Oscillation (APO), a zonal teleconnection pattern dominating in Asian–North Pacific sector, is highly variable and considerably impacts the climate, economy, society, and environment on regional and global scales.</p>
+</div>
+<div class="pair" data-id="p11-s02">
+  <p class="zh">利用第六次耦合模式比较计划（CMIP6）中 22 个全球气候模式（GCM）的输出，我们研究了夏季 APO 型态，并检验了其在不同共享社会经济路径（SSPs）下的预估变化。</p>
+  <p class="en">Using 22 outputs of global climate models (GCMs) from Phase six of the Coupled Model Intercomparison Project (CMIP6), we investigated the summer APO pattern and examined its projected changes under different Shared Socioeconomic Pathways (SSPs).</p>
+</div>
+<div class="pair" data-id="p11-s03">
+  <p class="zh">结果表明，大多数 CMIP6 GCM 能够准确刻画 1950–2014 年 APO 的空间特征，但模式再现 APO 年际变率和长期趋势的能力相对较低。</p>
+  <p class="en">Results show that most CMIP6 GCMs can accurately capture the spatial features of the APO for 1950–2014, while model ability to reproduce APO interannual variability and long-term trend is relatively low.</p>
+</div>
+<div class="pair" data-id="p11-s04">
+  <p class="zh">尽管对长期趋势的再现仍不理想，多模式集合（MME）在再现再分析资料中的 APO 特征方面比单一气候模式更具代表性。</p>
+  <p class="en">The multi-model ensemble (MME) is more representative in reproducing reproduce APO features in the reanalysis data than the single climate model, although the long-term trend remains unsatisfactory.</p>
+</div>
+<div class="pair" data-id="p11-s05">
+  <p class="zh">此外，在四种 SSP 情景下，MME 预估 21 世纪晚期 APO 强度平均而言将减弱，其中减弱幅度最大的是辐射强迫最高的 SSP5-8.5 情景。</p>
+  <p class="en">Furthermore, the MME under four SSPs project an average decrease in APO intensity during the late 21st century, with the largest decrease occurring under SSP5-8.5, which is the scenario with the highest radiative forcing.</p>
+</div>
+<div class="pair" data-id="p11-s06">
+  <p class="zh">相对于历史观测，模式预估亚洲大陆上空降温、太平洋上空增暖，且 APO 型态的垂直轴发生倾斜，这将导致未来 APO 略微东移。</p>
+  <p class="en">The models project cooling over continental Asia and warming over the Pacific relative to historical observations and tilting of the vertical axis of the APO pattern, which results in a slight eastward shift of the APO in the future.</p>
+</div>
+<div class="pair" data-id="p11-s07">
+  <p class="zh">根据 MME 并相对于 1965–2014 年，APO 在 21 世纪中后期可能减弱。</p>
+  <p class="en">According to the MME and relative to 1965–2014, the APO is likely to weaken during the mid and late 21st century.</p>
+</div>
+<div class="pair" data-id="p11-s08">
+  <p class="zh">此外，尽管仍存在相当大的不确定性，在高排放情景下，各模式对 APO 指数预估变化的彼此一致性较高。</p>
+  <p class="en">In addition, although considerable uncertainties remain, there is substantial agreement between models in their projected changes of the APO index under high emissions scenarios.</p>
+</div>
+
+</section>
+<h2><span class="hz">1 引言</span><span class="he"> 1 Introduction</span></h2>
+<section>
+<div class="pair" data-id="p12-s01">
+  <p class="zh">亚洲–太平洋涛动（APO）是亚太地区乃至整个北半球热带外地区的一种主要气候变率模态，在暖季尤为显著（Zhao et al. 2007）。</p>
+  <p class="en">The Asian–Pacific Oscillation (APO) is a predominant mode of climate variability in the Asia-Pacific region and even the whole extra-tropical Northern Hemisphere, especially pronounced during the warm season (Zhao et al. 2007).</p>
+</div>
+<div class="pair" data-id="p12-s02">
+  <p class="zh">这种跷跷板式现象可大致用一个大型偶极型来刻画，表现为亚洲大陆上空的正/负对流层上层（500–200 hPa）扰动温度（T′）或扰动位势高度（H′）异常与太平洋上空的负/正 T′ 或 H′ 相对应，同时也体现为夏季平均 T′ 或 H′ 的第一经验正交函数（EOF）模态（Zhao et al. 2007, 2008, 2010, 2011; Yang et al. 2023）。</p>
+  <p class="en">This seesaw phenomenon can be approximately characterized by a large-scale dipole pattern associated with a positive/negative upper-tropospheric (500–200 hPa) eddy temperatures (T′) or eddy geopotential height anomaly (H′) over continental Asia and a negative/positive T′ or H′ over the Pacific Ocean and is also represented by the first empirical orthogonal function (EOF) of the summer mean T′ or H′ (Zhao et al. 2007, 2008, 2010, 2011; Yang et al. 2023).</p>
+</div>
+<div class="pair" data-id="p12-s03">
+  <p class="zh">因此，APO 的正（负）位相对应着亚洲（尤其是青藏高原及其邻近地区）上空的正（负）T′ 以及北太平洋中纬度上空的负（正）异常，这表明对流层在亚洲（北太平洋）上空出现增暖（变冷）。</p>
+  <p class="en">Thus, a positive (negative) phase of APO is associated with positive (negative) T′ over Asia (especially the Tibetan Plateau and adjacent regions) and negative (positive) anomalies over the mid-latitudes of the North Pacific, which indicates a warming (cooling) troposphere occurs over Asia (North Pacific).</p>
+</div>
+<div class="pair" data-id="p12-s04">
+  <p class="zh">许多研究表明，APO 显著影响区域和全球尺度的气候变率，其影响在亚太地区尤为突出（Zhao et al. 2007, 2012a; Liu et al. 2011; Lin et al. 2019; Xia et al. 2022, 2023）。</p>
+  <p class="en">Many studies have shown that the APO considerably influences climate variability on regional and global scales and its effect is especially pronounced over the Asia–Pacific region (Zhao et al. 2007, 2012a; Liu et al. 2011; Lin et al. 2019; Xia et al. 2022, 2023).</p>
+</div>
+<div class="pair" data-id="p12-s05">
+  <p class="zh">例如，东亚夏季风（EASM）及与之相伴的降水和温度型态都受到夏季 APO 波动的强烈调制（Zhao et al. 2008, 2012b; Zou et al. 2015; Liu et al. 2017; Hua et al. 2019; Wen et al. 2022）。</p>
+  <p class="en">For example, the East Asian summer monsoon (EASM) and associated precipitation and temperature patterns are strongly modulated by summer APO fluctuations (Zhao et al. 2008, 2012b; Zou et al. 2015; Liu et al. 2017; Hua et al. 2019; Wen et al. 2022).</p>
+</div>
+<div class="pair" data-id="p12-s06">
+  <p class="zh">此外，北太平洋夏季海表温度（SST）也受到 APO 的影响，其特征为强（弱）APO 对应北太平洋 SST 偏高（偏低）（Zhou et al. 2010）。</p>
+  <p class="en">Furthermore, summer sea surface temperature (SST) in the North Pacific is also influenced by the APO which is characterized by the enhanced (decreased) SST over North Pacific corresponding to a strong (weak) APO (Zhou et al. 2010).</p>
+</div>
+<div class="pair" data-id="p12-s07">
+  <p class="zh">夏季 APO 还通过激发一支自北太平洋向北大西洋传播的纬向准定常波列而影响北大西洋涛动（NAO）（Zhou and Wang 2015）。</p>
+  <p class="en">Summer APO also impacts the North Atlantic Oscillation (NAO) by triggering a zonal quasi-stationary wave pattern that propagates from the North Pacific to the North Atlantic (Zhou and Wang 2015).</p>
+</div>
+<div class="pair" data-id="p12-s08">
+  <p class="zh">全球气候模式（GCM）被广泛应用于气候变化研究，是加深我们对过去和当前气候变化的理解并对未来进行预估的有力工具。</p>
+  <p class="en">Global climate models (GCMs) are widely used in climate change research and are powerful tools to improve our understanding of past and current climate change and for making projections of the future.</p>
+</div>
+<div class="pair" data-id="p12-s09">
+  <p class="zh">第五次耦合模式比较计划（CMIP5）发展了高质量的模拟试验，进一步加深了我们对气候变化的认识（Taylor et al. 2012）。</p>
+  <p class="en">The fifth phase of the Coupled Model Intercomparison Project (CMIP5) developed high-quality simulation experiments to further our understanding of climate change (Taylor et al. 2012).</p>
+</div>
+<div class="pair" data-id="p12-s10">
+  <p class="zh">已有研究考察了 CMIP5 GCM 对 APO 的模拟能力，包括其结构、变率、对气候的影响以及未来变化。</p>
+  <p class="en">Previous studies have investigated the performance of CMIP5 GCMs in modeling the APO, including its structure, variability, influence on the climate, and future changes.</p>
+</div>
+<div class="pair" data-id="p12-s11">
+  <p class="zh">Zhou（2016）发现，大多数 CMIP5 GCM 能准确刻画夏季 APO 特征，但部分模式在模拟 APO 年际变率和年代际趋势方面能力较弱。</p>
+  <p class="en">Zhou (2016) found that most CMIP5 GCMs can accurately capture summer APO features but some models are less skilled in simulating APO interannual variability and decadal trends.</p>
+</div>
+<div class="pair" data-id="p12-s12">
+  <p class="zh">Zhou et al.（2018）进一步研究了当前与未来 APO 与亚太地区大气环流之间关系及相伴的降水异常。</p>
+  <p class="en">Zhou et al. (2018) further investigated the present and future relationships between APO and the atmospheric circulations over the Asia–Pacific and associated precipitation anomalies.</p>
+</div>
+<div class="pair" data-id="p12-s13">
+  <p class="zh">他们得出结论：在未来增暖情景下，APO 与东亚夏季降水之间的关系可能显著减弱，这可能源于 APO 与东亚急流及西北太平洋副热带高压（WPSH）经向位移之间联系的显著减弱。</p>
+  <p class="en">They concluded that a considerable weakening of the relationship between APO and East Asian summer precipitation is likely under future warming scenario and this may be caused by the considerable weakening of the linkage between APO and the meridional displacement of the East Asian jet and the Western Pacific subtropical high (WPSH).</p>
+</div>
+<div class="pair" data-id="p12-s14">
+  <p class="zh">世界气候研究计划发布了参加第六次耦合模式比较计划（CMIP6）的 GCM 系列模拟数据，为气候模式研究开辟了新途径（Eyring et al. 2016）。</p>
+  <p class="en">The World Climate Research Programme has released a series of simulation data from the GCMs participating in the sixth phase of CMIP (CMIP6) and has created new avenues for climate model research (Eyring et al. 2016).</p>
+</div>
+<div class="pair" data-id="p12-s15">
+  <p class="zh">许多研究利用 CMIP6 数据评估了对大尺度气候模态及其与降水和 SST 密切关联的模拟与预估（如 Fredriksen et al. 2020; McKenna et al. 2020; Coburn and Pryor 2021; Chinta et al. 2022）；然而，鲜有研究考察 CMIP6 模式再现 APO 时空变率的能力，或对 APO 进行归因或预估分析。</p>
+  <p class="en">Many studies have used CMIP6 data to evaluate the simulations and projections of large-scale climate modes and their close association with precipitation and SST (e.g., Fredriksen et al. 2020; McKenna et al. 2020; Coburn and Pryor 2021; Chinta et al. 2022); however, few studies have examined the ability of CMIP6 models to replicate the spatio-temporal variability of the APO, or conducted attribution or projection analyses of the APO.</p>
+</div>
+<div class="pair" data-id="p12-s16">
+  <p class="zh">鉴于 APO 对气候变化的重要影响，对 APO 结构与演变的历史模拟和未来预估，对于我们理解亚太地区的当前及未来气候至关重要。</p>
+  <p class="en">Given the important influence of the APO on climate change, historical simulations and future projections of APO’s structure and evolution are essential for our understanding of present and future climate in the Asia–Pacific.</p>
+</div>
+<div class="pair" data-id="p12-s17">
+  <p class="zh">因此，本研究利用历史模拟和未来预估，评估 CMIP6 模式再现 APO 时空变率的能力，并考察不同气候情景下 APO 的未来变化。</p>
+  <p class="en">Therefore, in this study, we used historical simulations and future projections to assess the performance of CMIP6 models in reproducing the spatio-temporal variability of APO and examine future APO changes under different climate scenarios.</p>
+</div>
+<div class="pair" data-id="p12-s18">
+  <p class="zh">本文其余部分组织如下。</p>
+  <p class="en">The remaining parts of this paper are organized as follows.</p>
+</div>
+<div class="pair" data-id="p12-s19">
+  <p class="zh">第 2 节介绍本研究所用的数据与方法。</p>
+  <p class="en">In Section 2, we describe the data and methods that were used in this study.</p>
+</div>
+<div class="pair" data-id="p12-s20">
+  <p class="zh">第 3 节将 CMIP6 模式输出与再分析资料进行比较，以评估模式再现 APO 的能力。</p>
+  <p class="en">In Section 3, CMIP6 model outputs are compared with reanalysis data to assess the performance of the models in reproducing the APO.</p>
+</div>
+<div class="pair" data-id="p12-s21">
+  <p class="zh">第 4 节给出不同气候情景下对 APO 的模式预估，第 5 节给出结论与讨论。</p>
+  <p class="en">Model projections of the APO under different climate scenarios are presented in Section 4 and conclusions and discussions are presented in Section 5.</p>
+</div>
+
+</section>
+<h2><span class="hz">2 数据与方法</span><span class="he"> 2 Data and methods</span></h2>
+<section>
+<div class="pair" data-id="p13-s01">
+  <p class="zh">本研究使用了 22 个 CMIP6 模式的逐月输出，包括 1950–2014 年的历史模拟，以及共享社会经济路径（SSP）SSP1-2.6、SSP2-4.5、SSP3-7.0 和 SSP5-8.5 下 2015–2099 年的未来预估（O’Neill et al. 2014; Gidden et al. 2019）。</p>
+  <p class="en">The present study used monthly outputs from 22 CMIP6 models, including historical simulations from 1950 to 2014 and future projections from 2015 to 2099 under the Shared Socioeconomic Pathways (SSPs) of SSP1-2.6, SSP2-4.5, SSP3-7.0, and SSP5-8.5 (O’Neill et al. 2014; Gidden et al. 2019).</p>
+</div>
+<div class="pair" data-id="p13-s02">
+  <p class="zh">为限制模式偏差并确保评估口径一致，我们仅使用每个模式的第一个集合成员（r1i1p1f1）。</p>
+  <p class="en">To limit model bias and ensure uniformity across our assessment, we only used the first realization (r1i1p1f1) of each model.</p>
+</div>
+<div class="pair" data-id="p13-s03">
+  <p class="zh">我们还采用双线性插值将 22 个模式统一重网格到 2.5°×2.5° 网格。</p>
+  <p class="en">We also used bilinear interpolation to re-grid the 22 models to a uniform 2.5°×2.5° grid.</p>
+</div>
+<div class="pair" data-id="p13-s04">
+  <p class="zh">模式详情见表 1。</p>
+  <p class="en">Details of the models are shown in Table 1.</p>
+</div>
+<div class="table-block" id="table1">
+  <div class="pair" data-id="tab1-cap">
+    <p class="zh">表 1　本研究纳入的 22 个 CMIP6 模式详情</p>
+    <p class="en">Table 1 Details of the 22 CMIP6 models included in this study</p>
+  </div>
+  <table>
+    <thead>
+      <tr><th>模式 Model</th><th>机构/国家 Institute/country</th><th>水平分辨率（纬 × 经）Horizontal resolution (lat × lon)</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>ACCESS-CM2</td><td>CSRO-ARCCSS/Australia</td><td>144 × 192</td></tr>
+      <tr><td>ACCESS-ESM1-5</td><td>CSIRO/Australia</td><td>144 × 192</td></tr>
+      <tr><td>AWI-CM-1-1-MR</td><td>AWI/Germany</td><td>192 × 384</td></tr>
+      <tr><td>BCC-CSM2-MR</td><td>BCC/China</td><td>160 × 320</td></tr>
+      <tr><td>CAMS-CSM1-0</td><td>CAMS/China</td><td>160 × 320</td></tr>
+      <tr><td>CanESM5</td><td>CCCma/Canada</td><td>64 × 128</td></tr>
+      <tr><td>CESM2-WACCM</td><td>NCAR/USA</td><td>192 × 288</td></tr>
+      <tr><td>CMCC-CM2-SR5</td><td>CMCC/Italy</td><td>192 × 288</td></tr>
+      <tr><td>EC-Earth3</td><td>EC-Earth-Consortium/Europe</td><td>256 × 512</td></tr>
+      <tr><td>EC-Earth3-Veg</td><td></td><td>256 × 512</td></tr>
+      <tr><td>FGOALS-f3-L</td><td>CAS/China</td><td>180 × 288</td></tr>
+      <tr><td>FGOALS-g3</td><td></td><td>80 × 180</td></tr>
+      <tr><td>INM-CM4-8</td><td>INM/Russia</td><td>120 × 180</td></tr>
+      <tr><td>INM-CM5-0</td><td></td><td></td></tr>
+      <tr><td>IPSL-CM6A-LR</td><td>IPSL/France</td><td>143 × 144</td></tr>
+      <tr><td>KACE-1-0-G</td><td>NIMS-KMA/Republic of Korea</td><td>144 × 192</td></tr>
+      <tr><td>MIROC6</td><td>MIROC/Japan</td><td>128 × 256</td></tr>
+      <tr><td>MPI-ESM1-2-HR</td><td>MPI-M/Germany</td><td>192 × 384</td></tr>
+      <tr><td>MPI-ESM1-2-LR</td><td></td><td>96 × 192</td></tr>
+      <tr><td>MRI-ESM2-0</td><td>MRI/Japan</td><td>160 × 320</td></tr>
+      <tr><td>NorESM2-LM</td><td>NCC/Norway</td><td>96 × 144</td></tr>
+      <tr><td>NorESM2-MM</td><td></td><td>192 × 288</td></tr>
+    </tbody>
+  </table>
+
+<div class="pair" data-id="p13-s05">
+  <p class="zh">逐月平均气温来自美国国家环境预报中心/国家大气研究中心（NCEP/NCAR）再分析资料（Kalnay et al. 1996），水平分辨率为 2.5°×2.5°。</p>
+  <p class="en">Monthly mean air temperature with a horizontal resolution of 2.5°×2.5° was obtained from the National Centers for Environmental Prediction/National Center for Atmospheric Research (NCEP/NCAR) reanalysis (Kalnay et al. 1996).</p>
+</div>
+<div class="pair" data-id="p14-s01">
+  <p class="zh">使用 1950–2014 年的再分析资料评估 CMIP6 模式对 APO 的模拟能力。</p>
+  <p class="en">The reanalysis dataset from 1950–2014 was used to assess the performance of CMIP6 models in modeling APO.</p>
+</div>
+<div class="pair" data-id="p14-s02">
+  <p class="zh">我们在分析中使用了若干气候指数。</p>
+  <p class="en">We used several climate indices in our analysis.</p>
+</div>
+<div class="pair" data-id="p14-s03">
+  <p class="zh">参照 Zhao et al.（2007），APO 指数（APOI）定义为亚洲（15°–50° N，60°–120° E）与北太平洋（15°–50° N，180°–120° W）之间夏季 T′ 的算术差。</p>
+  <p class="en">Following Zhao et al. (2007), the APO index (APOI) was defined as the arithmetic difference of the summer T′ between Asia (15°–50° N, 60°–120° E) and the North Pacific (15°–50° N, 180°–120° W).</p>
+</div>
+<div class="pair" data-id="p14-s04">
+  <p class="zh">指数为正值表示 APO 强事件，反之亦然。</p>
+  <p class="en">A positive index indicates a strong APO event and vice versa.</p>
+</div>
+<div class="pair" data-id="p14-s05">
+  <p class="zh">为度量亚洲和北太平洋上空 T′ 的强度，我们进一步采用亚洲指数（AI）和太平洋指数（PI），分别定义为亚洲区域（15°–50° N，60°–120° E）和北太平洋区域（15°–50° N，180°–120° W）的区域平均 T′。</p>
+  <p class="en">To measure the intensity of T′ over Asia and the North Pacific, we further used the Asian index (AI) and the Pacific index (PI), which were defined as the regional mean T′ over Asia (15°–50° N, 60°–120° E) and over the North Pacific (15°–50° N, 180°–120° W), respectively.</p>
+</div>
+<div class="pair" data-id="p14-s06">
+  <p class="zh">此外，我们使用 Taylor 图（Taylor 2001）来定量评估各 CMIP6 GCM 再现当前 APO 的能力。</p>
+  <p class="en">Also, we used the Taylor diagram (Taylor 2001) to quantify the capability of individual CMIP6 GCMs in reproducing the present-day APO.</p>
+</div>
+<div class="pair" data-id="p14-s07">
+  <p class="zh">Taylor 图可从空间相关系数（SCC）、均方根误差（RMSE）和标准差比值（RSD）等方面综合统计评估模拟与观测之间的相似程度，从而直接比较模式性能。</p>
+  <p class="en">The Taylor diagram can provide a comprehensive statistical assessment of similarity between simulations and observation in terms of their spatial correlation coefficient (SCC), root-mean-square error (RMSE) and the ratio of standard deviation (RSD), and thus enables a direct comparison of model performance.</p>
+</div>
+<div class="pair" data-id="p14-s08">
+  <p class="zh">我们计算了多模式集合（MME）平均，即对所有模式模拟做简单算术平均；它被广泛用于评估 GCM 的相对性能（Gupta et al. 2013; He et al. 2018）。</p>
+  <p class="en">We calculated the multi-model ensemble (MME) mean, which is a simple arithmetic average across all model simulations and is widely used to assess the relative performance of GCMs (Gupta et al. 2013; He et al. 2018).</p>
+</div>
+<div class="pair" data-id="p14-s09">
+  <p class="zh">采用 Student t 检验考察统计显著性。</p>
+  <p class="en">The Student’s t-test was adopted to examine the statistical significance.</p>
+</div>
+<div class="pair" data-id="p14-s10">
+  <p class="zh">本研究聚焦北半球夏季（6–8 月，JJA）。</p>
+  <p class="en">In this study, we focus on boreal summer (June to August, JJA).</p>
+</div>
+<div class="pair" data-id="p14-s11">
+  <p class="zh">历史评估与未来预估分别针对 1950–2014 年和 2015–2099 年进行。</p>
+  <p class="en">The historical evaluation and future projection were carried out from 1950 to 2014 and from 2015 to 2099, respectively.</p>
+</div>
+<div class="pair" data-id="p14-s12">
+  <p class="zh">此外，选取 2050–2099 年时段，与 1965–2014 年历史时段相比较，分析四种 SSP 情景下 APO 的未来变化。</p>
+  <p class="en">Additionally, the period of 2050–2099 is selected to analyze future changes of the APO under the four SSPs scenarios in comparison with the historical time period of 1965–2014.</p>
+</div>
+
+</section>
+<h2><span class="hz">3 CMIP6 GCM 的性能评估</span><span class="he"> 3 Performance evaluation of CMIP6 GCMs</span></h2>
+<section>
+<div class="pair" data-id="p15-s01">
+  <p class="zh">我们首先将 MME 平均与再分析资料进行比较，以评估模式对气候平均 JJA T′ 空间结构的模拟性能。</p>
+  <p class="en">We first compared the MME mean with reanalysis data to assess model performance in simulating the spatial structure of climatological JJA mean T′.</p>
+</div>
+<div class="pair" data-id="p15-s02">
+  <p class="zh">在观测中，显著正值主要出现在亚洲上空，最大值超过 5 °C；而显著负值主要出现在北太平洋中东部上空，最小值低于 −3 °C，呈现出亚太区域清晰的纬向跷跷板型态（图 1a）。</p>
+  <p class="en">In the observation, the marked positive values are mainly found over Asia with maximum values exceeding 5 °C, while significant negative values are mostly observed over central eastern North Pacific with minimum values below −3 °C, which shows a clear zonal seesaw pattern over the Asia–Pacific region (Fig. 1a).</p>
+</div>
+<div class="pair" data-id="p15-s03">
+  <p class="zh">总体而言，MME 能准确刻画对流层上层 T′ 的主要特征（图 1b），包括亚洲和北太平洋上空分别为正、负 T′ 异常。</p>
+  <p class="en">Generally, the MME can accurately capture the main characteristics of upper-tropospheric T′ (Fig. 1b), including positive and negative T′ anomalies over Asia and the North Pacific, respectively.</p>
+</div>
+<figure id="fig01">
+<img src="../../assets/313fc38631e4ce72a203ee3458cf0c3aa983f7617f455c89787d5ba57c23fc08.png" alt="Figure 1"/>
+<figcaption>
+<div class="pair" data-id="fig1-s01">
+  <p class="zh">图 1　1950–2014 年垂直平均（500–200 hPa）JJA 平均 T′（°C）的气候态分布图：a 观测，b 22 个 CMIP6 模式的 MME 平均</p>
+  <p class="en">Fig. 1 Climatological map of the vertically averaged (500–200 hPa) JJA mean T′ (°C) for 1950–2014 in a observation and b MME mean of 22 CMIP6 models</p>
+</div>
+</figcaption>
+</figure>
+<div class="pair" data-id="p15-s04">
+  <p class="zh">随后，我们对亚太区域的观测和 MME 平均的夏季对流层上层 T′ 进行了 EOF 分析。</p>
+  <p class="en">We then conducted EOF analyses of summer upper-tropospheric T′ from observation and from the MME mean for the Asia–Pacific region.</p>
+</div>
+<div class="pair" data-id="p15-s05">
+  <p class="zh">在观测中，第一模态（EOF1）（图 2a）解释了总方差的 34.3%，并通过 North 检验（North et al. 1982）。</p>
+  <p class="en">In the observations, the first mode (EOF1) (Fig. 2a) explains 34.3% of the total variance and passes the North test (North et al. 1982).</p>
+</div>
+<div class="pair" data-id="p15-s06">
+  <p class="zh">可以看到，亚太扇区存在明显的纬向跷跷板结构：欧亚大陆以正值为主，北太平洋以负值为主，这表明两区域的 T′ 之间存在显著的负相关。</p>
+  <p class="en">One can see that there is a distinct zonal seesaw structure over the Asia–Pacific sector, with positive values predominating in Eurasia and negative values prevailing in the North Pacific, which suggests a significant negative correlation between T′ of the two regions.</p>
+</div>
+<div class="pair" data-id="p15-s07">
+  <p class="zh">在 MME 平均中，EOF1 解释了总方差的 27%（图 2b），其空间分布与观测的 EOF1 高度一致。</p>
+  <p class="en">In the MME mean, EOF1 accounts for 27% of the total variance (Fig. 2b) and its spatial distribution is well comparable to that of EOF1 of the observation.</p>
+</div>
+<div class="pair" data-id="p15-s08">
+  <p class="zh">这些模式也成功再现了亚洲与北太平洋夏季对流层上层 T′ 之间的反相关系。</p>
+  <p class="en">The models also successfully reproduce the inverse relationship between summer upper troposphere T′ in Asia and that in the North Pacific.</p>
+</div>
+<div class="pair" data-id="p15-s09">
+  <p class="zh">就单个模式而言，EOF1 模态的解释方差介于 15.6%（INM-CM4-8）到 35.4%（FGOALS-f3-L）之间，且除 INM-CM4-8 外所有模式均通过 North 检验，表明 22 个 CMIP6 模式中的大多数都能合理模拟 APO 的空间型态（图 2c）。</p>
+  <p class="en">For the individual models, the explained variance of EOF1 mode ranges from 15.6% (INM-CM4-8) to 35.4% (FGOALS-f3-L) with all the models pass the North test except INM-CM4-8, indicating that most of the 22 CMIP6 models can reasonably simulate the spatial pattern of APO (Fig. 2c).</p>
+</div>
+<figure id="fig02">
+<img src="../../assets/6fa063d0c1fb8079f6409a00df2e8fe07a9127d213ad24bb385ac58296e4e495.png" alt="Figure 2"/>
+<figcaption>
+<div class="pair" data-id="fig2-s01">
+  <p class="zh">图 2　1950–2014 年垂直平均（500–200 hPa）JJA 平均 T′（×0.01）的 EOF1：a 观测，b MME 平均历史模拟；c 观测与 CMIP 模式模拟中 EOF1 的解释方差百分比</p>
+  <p class="en">Fig. 2 EOF1 of vertical averaged (500–200 hPa) JJA mean T′ (×0.01) for 1950–2014 from a observation and b MME mean historical simulation; c percentage of variance explained by EOF1 in observation and CMIP model simulations</p>
+</div>
+</figcaption>
+</figure>
+<div class="pair" data-id="p15-s10">
+  <p class="zh">利用 Taylor 图，我们将各模式及 MME 平均的 T′ 与观测 T′ 进行比较，以评估模式对亚太区域 APO 水平和垂直结构的模拟能力（图 3）。</p>
+  <p class="en">Using Taylor diagrams, we compared T′ from individual models and the MME mean with T′ from observation to assess model performance in simulating the horizontal and vertical structures of APO over the Asia–Pacific (Fig. 3).</p>
+</div>
+<figure id="fig03">
+<img src="../../assets/2cb44d25999051d7c42743a03ebb5594bc3ebd76130c69821e3a2941067b9b2f.png" alt="Figure 3"/>
+<figcaption>
+<div class="pair" data-id="fig3-s01">
+  <p class="zh">图 3　1950–2014 年 CMIP6 模式模拟与观测的 Taylor 图：a 对应图 1 的水平 T′ 分布，b 对应 500–200 hPa 的垂直 T′ 分布；REF 表示再分析资料中的 T′ 场。</p>
+  <p class="en">Fig. 3 Taylor diagrams of CMIP6 model simulations and observation for 1950–2014 for a the horizontal T′ distribution in Fig. 1 and b the vertical T′ distribution at 500–200 hPa; REF indicates the T′ field in the reanalysis data.</p>
+</div>
+<div class="pair" data-id="fig3-s02">
+  <p class="zh">模式输出与再分析资料之间的空间相关系数（SCC）由方位角位置给出。</p>
+  <p class="en">Spatial correlation coefficients (SCCs) between model outputs and reanalysis data are given by azimuthal positions.</p>
+</div>
+<div class="pair" data-id="fig3-s03">
+  <p class="zh">标准差与均方根误差（RMSE）（均相对于观测标准差归一化）分别由径向距离以及模式与 REF 之间的距离给出</p>
+  <p class="en">The standard deviation and root mean square error (RMSE) (both normalized with respect to the standard deviation of the observation) are given by the radial distance and the distance between models and REF, respectively</p>
+</div>
+</figcaption>
+</figure>
+<div class="pair" data-id="p15-s11">
+  <p class="zh">显然，这些模式能够很好地再现 APO 的水平和垂直结构。</p>
+  <p class="en">Clearly, the models can adequately reproduce the horizontal and vertical structures of the APO.</p>
+</div>
+<div class="pair" data-id="p15-s12">
+  <p class="zh">对于水平 T′，除 INM-CM4-8 和 INM-CM5-0 外，所有模式的 SCC 都超过 0.9。</p>
+  <p class="en">For horizontal T′, SCCs of all models, except INM-CM4-8 and INM-CM5-0, exceed 0.9.</p>
+</div>
+<div class="pair" data-id="p15-s13">
+  <p class="zh">此外，CMIP6 模拟相对于观测的 RMSE 介于 0.25（AWI-CM-1-1-MR）到 0.60（INM-CM5-0）之间，且总体低于 0.5，表明 CMIP6 模式在再现 APO 水平型态方面具有良好技巧。</p>
+  <p class="en">Furthermore, the RMSEs of the CMIP6 simulations relative to the observations range from 0.25 (AWI-CM-1-1-MR) to 0.60 (INM-CM5-0) and generally below 0.5, signifying good skill of CMIP6 models in reproducing APO horizontal pattern.</p>
+</div>
+<div class="pair" data-id="p15-s14">
+  <p class="zh">此外，大多数 CMIP6 模式的水平 APO 型态归一化标准差都落在 1±20% 的范围内。</p>
+  <p class="en">Also, most of the CMIP6 models show the normalized standard deviation within the range of 1 ± 20% for the horizontal APO pattern.</p>
+</div>
+<div class="pair" data-id="p15-s15">
+  <p class="zh">CMIP6 模式也能很好地刻画 T′ 的垂直结构。</p>
+  <p class="en">The CMIP6 models can adequately capture the vertical structures of the T′ as well.</p>
+</div>
+<div class="pair" data-id="p15-s16">
+  <p class="zh">垂直 T′ 的 RMSE、SCC 和归一化标准差分别主要落在 0.90–0.99、0.21–0.52 和 0.84–1.21 的范围内。</p>
+  <p class="en">The RMSE, SCC, and normalized standard deviation of vertical T′ are mainly in the range of 0.90–0.99, 0.21–0.52, and 0.84–1.21, respectively.</p>
+</div>
+<div class="pair" data-id="p15-s17">
+  <p class="zh">此外，MME 平均的性能优于大多数单个模式，其水平和垂直 T′ 模拟的 SCC、RSD 和 RMSE 分别为 0.98、1.01、0.20 和 0.98、0.99、0.16。</p>
+  <p class="en">In addition, the performance of the MME mean is superior to that of most individual models, with the SCCs, RSDs and RMSEs for horizontal and vertical T′ simulations being 0.98, 1.01, 0.20 and 0.98, 0.99, 0.16, respectively.</p>
+</div>
+<div class="pair" data-id="p15-s18">
+  <p class="zh">这些结果表明，大多数 CMIP6 模式能够准确再现 APO 在对流层上层的空间结构。</p>
+  <p class="en">These results suggest that the majority of the CMIP6 models can accurately reproduce the spatial structure of the APO in the upper troposphere.</p>
+</div>
+<div class="pair" data-id="p16-s01">
+  <p class="zh">下面考察观测和 MME 平均模拟中 APO 的垂直结构（图 4）。</p>
+  <p class="en">In the following, we examine the vertical structure of APO from observation and MME mean simulation (Fig. 4).</p>
+</div>
+<div class="pair" data-id="p16-s02">
+  <p class="zh">在观测的夏季 T′ 经度–高度剖面（沿 30° N）上，自对流层低层至 150 hPa 存在一个准正压的垂直偶极型：亚洲上空为正极，北太平洋上空为负极（图 4a）。</p>
+  <p class="en">In the longitude–height cross section (along 30° N) of summer T′ from observation, there is a quasi-barotropic vertical dipole pattern with a positive pole over Asia and a negative pole over North Pacific from the lower troposphere to 150 hPa (Fig. 4a).</p>
+</div>
+<div class="pair" data-id="p16-s03">
+  <p class="zh">与观测一致，MME 能再现这些特征中的大部分，其经度–高度剖面与观测惊人地相似（图 4b）。</p>
+  <p class="en">In consistent with the observations, the MME can reproduce most of these features, and the longitude–height cross section is strikingly similar to that from observation (Fig. 4b).</p>
+</div>
+<figure id="fig04">
+<img src="../../assets/c3767948dc3bb14ba209eb5f91a07813d0fa308971e6e7d5a100dc3a0d6dc915.png" alt="Figure 4"/>
+<figcaption>
+<div class="pair" data-id="fig4-s01">
+  <p class="zh">图 4　1950–2014 年 JJA 平均 T′（°C）的经度–高度剖面（沿 30°N）：a 观测，b 22 个 CMIP6 模式的 MME 平均</p>
+  <p class="en">Fig. 4 Longitude-height cross-section (along 30°N) of the JJA mean T′ (°C) for 1950–2014 from a observation and b MME mean of 22 CMIP6 models</p>
+</div>
+</figcaption>
+</figure>
+<div class="pair" data-id="p17-s01">
+  <p class="zh">此外，我们发现 INM-CM4-8 和 INM-CM5-0 在水平和垂直方向上再现 APO 气候特征方面明显逊于其他 CMIP6 输出（图 3）。</p>
+  <p class="en">Additionally, we find that INM-CM4-8 and INM-CM5-0 are obviously inferior to other CMIP6 outputs in reproducing the climatological characteristics of APO in both the horizontal and vertical directions (Fig. 3).</p>
+</div>
+<div class="pair" data-id="p17-s02">
+  <p class="zh">综合考虑各模式的表现，我们选取两个最佳模式（AWI-CM-1-1-MR 和 EC-Earth3）和两个最差模式（INM-CM4-8 和 INM-CM5-0），初步探究 INM-CM4-8 和 INM-CM5-0 与其他模式存在显著差异的原因。</p>
+  <p class="en">Comprehensive consideration on the performance of each model, we choose the two best models (AWI-CM-1-1-MR and EC-Earth3) and the two worst models (INM-CM4-8 and INM-CM5-0) to preliminarily explore why INM-CM4-8 and INM-CM5-0 are significant different from other models.</p>
+</div>
+<div class="pair" data-id="p17-s03">
+  <p class="zh">INM-CM4-8 和 INM-CM5-0 的结果显示，亚洲大陆上空存在两个正 T′ 中心，而北太平洋上空的负 T′ 中心并入了北美上空的负 T′ 区（图略），这与观测结果明显不同。</p>
+  <p class="en">The results obtained from INM-CM4-8 and INM-CM5-0 show that there are two positive T' centers over the Asia continent, and the negative T' center over the North Pacific blend into the negative T' region over the Northern America (figure not shown), which is distinct from the observational result.</p>
+</div>
+<div class="pair" data-id="p17-s04">
+  <p class="zh">此外，INM-CM4-8 和 INM-CM5-0 中的 T′ 中心随高度增加向西倾斜（图略），而观测到的 APO 在垂直方向上并无明显倾斜。</p>
+  <p class="en">Moreover, the T' centers in INM-CM4-8 and INM-CM5-0 tilt westward with increasing height (figure not shown), while the observed APO does not show a pronounced tilt in the vertical.</p>
+</div>
+<div class="pair" data-id="p17-s05">
+  <p class="zh">然而，最好的两个模式很好地捕捉到了这些 APO 特征，因此其 SCC 更高、RMSE 更低。</p>
+  <p class="en">However, the best two models capture these APO features well; therefore, they have higher SCC and lower RMSE.</p>
+</div>
+<div class="pair" data-id="p17-s06">
+  <p class="zh">接下来，我们比较 APO 相关指数的相关系数（图 5）及其线性趋势（图 6），以评估模式对 1950–2014 年 APO 时间特征的模拟能力。</p>
+  <p class="en">Next, we compare the correlation coefficients of APO-related indices (Fig. 5) and their linear trends (Fig. 6) to assess model performance in simulating the temporal features of the APO for 1950–2014.</p>
+</div>
+<div class="pair" data-id="p17-s07">
+  <p class="zh">在观测中，AI 与 PI 之间存在很强的负相关（图 5a），相关系数为 −0.8，通过 99% 显著性检验，这意味着亚洲与北太平洋对流层上层 T′ 之间存在显著的反相关系。</p>
+  <p class="en">In the observation, there is a strong negative correlation between AI and PI (Fig. 5a), with the correlation coefficient being −0.8 which passes the 99% significance test and implies a prominent out-of-phase relationship between upper tropospheric T′ in Asia and that in the North Pacific.</p>
+</div>
+<figure id="fig05">
+<img src="../../assets/b5d4bdfbac6085bec1b65345bb2dffc07f60fd942eb7b756c08da810cc5dfb5c.png" alt="Figure 5"/>
+<figcaption>
+<div class="pair" data-id="fig5-s01">
+  <p class="zh">图 5　观测与模式输出之间的相关系数：a 亚洲指数（AI）与太平洋指数（PI），b APOI。</p>
+  <p class="en">Fig. 5 Correlation coefficients between observation and model outputs for the a Asian Index (AI) and Pacific Index (PI) and b APOI.</p>
+</div>
+<div class="pair" data-id="fig5-s02">
+  <p class="zh">数据时段为 1950–2014 年。</p>
+  <p class="en">Data are shown for 1950–2014.</p>
+</div>
+<div class="pair" data-id="fig5-s03">
+  <p class="zh">红色和蓝色虚线分别表示 99% 和 95% 置信水平</p>
+  <p class="en">Red and blue dashed lines indicate the 99% and 95% confidence levels, respectively</p>
+</div>
+</figcaption>
+</figure>
+<div class="pair" data-id="p17-s08">
+  <p class="zh">大多数 CMIP6 模式也捕捉到了这种强负相关，其中 MIROC6、FGOLAS-f3-L 和 NorESM2-LM 给出的相关与观测中的 AI–PI 相关最为接近，而 CESM2-WACCM 是唯一无法再现该负相关的模式。</p>
+  <p class="en">The strong negative correlation is also captured in most CMIP6 models, with MIROC6, FGOLAS-f3-L, and NorESM2-LM producing correlations that are the closest to the AI–PI correlation in the observation and CESM2-WACCM is the only model that is unable to reproduce the negative correlation.</p>
+</div>
+<div class="pair" data-id="p17-s09">
+  <p class="zh">然而，各模式在模拟 AI–PI 相关方面仍存在较大的模式间离散度；因此，就 AI–PI 相关而言，CMIP6 MME 平均似乎并不优于所有单个模式。</p>
+  <p class="en">However, there still exist a relatively large inter-model spreads across the models in simulating AI-PI correlation; thus, it appears that CMIP6 MME mean does not outperform all the individual models in terms of AI-PI correlation.</p>
+</div>
+<div class="pair" data-id="p17-s10">
+  <p class="zh">因此，在进行详细分析或未来预估之前，应考虑集合样本量的影响。</p>
+  <p class="en">Therefore, the effect of ensemble size should be taken into account before making detailed analyses or future projections.</p>
+</div>
+<div class="pair" data-id="p18-s01">
+  <p class="zh">我们进一步分析了观测 APOI 与模式输出 APOI 之间的相关系数，以评估模式对 APO 变率的模拟能力（图 5b）。</p>
+  <p class="en">We further analyzed the correlation coefficients between APOI from observation and that from model outputs to assess model performance in simulating APO variability (Fig. 5b).</p>
+</div>
+<div class="pair" data-id="p18-s02">
+  <p class="zh">从图中可见，各模式之间的相关差异很大；去趋势前，仅有三个模式（EC-Earth3Veg、FGOALS-g3 和 MPI-ESM1-2-HR）的相关系数为正且具有统计显著性。</p>
+  <p class="en">It can be seen from the figure that large variations exist in correlations among models, and correlation coefficients before detrending are positive and statistically significant for only three models (EC-Earth3-Veg, FGOALS-g3 and MPI-ESM1-2-HR).</p>
+</div>
+<div class="pair" data-id="p18-s03">
+  <p class="zh">为突出年际变率，我们去除了观测和模式输出的线性趋势，并分析了去趋势再分析资料 APOI 与去趋势模式输出 APOI 之间的相关系数。</p>
+  <p class="en">To highlight interannual variability, we removed linear trends from observations and model outputs and analyzed the correlation coefficients between APOI from detrended reanalysis data and that from detrended model outputs.</p>
+</div>
+<div class="pair" data-id="p18-s04">
+  <p class="zh">相关系数的模拟效果相对较差，仅约半数模式令人满意。</p>
+  <p class="en">The correlation coefficients are relatively poorly simulated and only about half of the models are satisfactory.</p>
+</div>
+<div class="pair" data-id="p18-s05">
+  <p class="zh">有四个模式的结果最差，其相关系数在去趋势前为正、去趋势后为负。</p>
+  <p class="en">There are four models that show the poorest results and their correlation coefficients are positive prior to detrending and negative after detrending.</p>
+</div>
+<div class="pair" data-id="p18-s06">
+  <p class="zh">这表明 CMIP6 模式在再现观测到的 APO 年际变率方面性能较低，CMIP5 模式也曾有类似报道（Zhou 2016）。</p>
+  <p class="en">This indicates low performance in CMIP6 models in reproducing the observed interannual variability of the APO, which has also been reported for CMIP5 models (Zhou 2016).</p>
+</div>
+<div class="pair" data-id="p18-s07">
+  <p class="zh">尽管单个模式技巧较差，MME 平均模拟却表现出相对较好的性能，相关系数为 0.33 和 0.35，且在 95% 置信水平上具有统计显著性。</p>
+  <p class="en">Despite poor skill in the individual models, MME mean simulation shows relatively good performance and the correlation coefficients are 0.33 and 0.35 and are statistically significant at the 95% confidence level.</p>
+</div>
+<div class="pair" data-id="p18-s08">
+  <p class="zh">由于 APO 与 AI 和 PI 相关，我们还分析了观测与 MME 平均之间 AI 和 PI 的相关系数，以评估模式对 AI 和 PI 年际变率的模拟能力。</p>
+  <p class="en">Because the APO is related to the AI and the PI, we also analyzed the correlation coefficients between AI and PI from observation and that from the MME mean to assess model performance in simulating AI and PI interannual variability.</p>
+</div>
+<div class="pair" data-id="p18-s09">
+  <p class="zh">MME 平均历史模拟很好地再现了 AI 和 PI 的年际变率。</p>
+  <p class="en">The MME mean historical simulation adequately reproduces AI and PI interannual variability.</p>
+</div>
+<div class="pair" data-id="p18-s10">
+  <p class="zh">观测与 MME 平均之间的相关系数，AI 为 0.27、PI 为 0.37（均在 95% 置信水平上具有统计显著性），表明 MME 平均较好地再现了 APO 的年际变率。</p>
+  <p class="en">Correlation coefficients between observation and MME mean are 0.27 for AI and 0.37 for PI (both are statistically significant at the 95% confidence level), which indicate that interannual variability of the APO is adequately reproduced by the MME mean.</p>
+</div>
+<div class="pair" data-id="p18-s11">
+  <p class="zh">由于 APO 具有相当的年代际变率，我们将 MME 平均的长期 APO 趋势与观测进行了比较，以评估模式对长期趋势的模拟能力（图 6）。</p>
+  <p class="en">Because the APO has considerable interdecadal variability, we compared the long-term APO trend from the MME mean with that from observation to assess model performance in simulating long-term trends (Fig. 6).</p>
+</div>
+<div class="pair" data-id="p18-s12">
+  <p class="zh">从图中可以非常清楚地看出，观测的 APO 经历了统计显著的减弱，趋势为每十年 −0.35。</p>
+  <p class="en">It is very clear from the figure that the observed APO experienced a statistically significant weakening, with a trend of -0.35 per decade.</p>
+</div>
+<figure id="fig06">
+<img src="../../assets/60699f59c07d9e54c545d4338c8de73e17771e7e83157435524ef62060241a17.png" alt="Figure 6"/>
+<figcaption>
+<div class="pair" data-id="fig6-s01">
+  <p class="zh">图 6　1950–2014 年归一化 APOI 的线性趋势</p>
+  <p class="en">Fig. 6 Linear trends of the normalized APOI for 1950–2014</p>
+</div>
+</figcaption>
+</figure>
+<div class="pair" data-id="p18-s13">
+  <p class="zh">MME 平均中也可以发现减弱趋势，但比观测弱得多：整个分析时段的趋势为 −0.37，在统计上不显著，其量级仅为观测趋势量级的六分之一。</p>
+  <p class="en">While the weakening trend can also be found in the MME mean but is much weaker than in observation, with a trend of -0.37 during the whole analysis period, which is statistically insignificant and its magnitude is only one-sixth of the magnitude of the trend in observation.</p>
+</div>
+<div class="pair" data-id="p18-s14">
+  <p class="zh">就单个模式而言，不同模式在再现 APO 长期趋势方面存在很大差异，趋势从每十年 −0.12（MPI-ESM1-2-HR）到每十年 0.08（CESM2-WACCM）不等，且约半数模式（22 个中的 10 个）给出增强趋势，与观测相反。</p>
+  <p class="en">For individual models, a large spread exists among different models in reproducing the long-term trend of APO, with the trends ranging from -0.12 per decade (MPI-ESM1-2-HR) to 0.08 per decade (CESM2-WACCM), and about half of the models (10 out of 22) project a strengthening trend, which is opposite to the observation.</p>
+</div>
+<div class="pair" data-id="p18-s15">
+  <p class="zh">此外，模式负趋势的量级小于观测趋势的量级，仅有两个模式（MPI-ESM1-2-HR 和 NorESM2-MM）的趋势在 95% 置信水平上具有统计显著性。</p>
+  <p class="en">Furthermore, magnitudes of negative model trends are smaller than the magnitude of the trend in observation and only two models (MPI-ESM1-2-HR and NorESM2-MM) have trends that are statistically significant at the 95% confidence level.</p>
+</div>
+<div class="pair" data-id="p18-s16">
+  <p class="zh">这些结果表明，尽管模式间离散度相当大，CMIP6 模式的 MME 平均仍能以相对较低的不确定性充分刻画 APO 的空间分布和年际变率。</p>
+  <p class="en">These results indicate that the MME mean of the CMIP6 models can adequately capture the spatial distribution and interannual variability of the APO with relatively low uncertainty despite substantial inter-model spread.</p>
+</div>
+<div class="pair" data-id="p18-s17">
+  <p class="zh">我们认为，MME 相对于单个模式的输出能有所改进。</p>
+  <p class="en">We conclude that the MME can provide an improvement over the output of individual models.</p>
+</div>
+<div class="pair" data-id="p18-s18">
+  <p class="zh">因此，第 4 节将分析 MME 平均的未来预估。</p>
+  <p class="en">Therefore, the future projections of the MME mean are analyzed in Section 4.</p>
+</div>
+
+</section>
+<h2><span class="hz">4 21 世纪 APO 的预估</span><span class="he"> 4 Projection of APO in the 21st century</span></h2>
+<section>
+<div class="pair" data-id="p19-s01">
+  <p class="zh">表 2 给出了四种 SSP 情景下 21 世纪中晚期 AI 与 PI 之间相关系数的预估变化。</p>
+  <p class="en">Table 2 shows the projected changes of correlation coefficients between the AI and PI for the period of mid-to late-21st century under the four SSPs scenarios.</p>
+</div>
+<div class="table-block" id="table2">
+  <div class="pair" data-id="tab2-cap">
+    <p class="zh">表 2　2050–2099 年四种 SSP 情景下 AI 与 PI 之间的相关系数。* 和 ** 分别表示 99% 和 95% 置信水平上的统计显著性（原文如此）</p>
+    <p class="en">Table 2 Correlation coefficients between AI and PI under the four SSPs scenarios for 2050–2099. The * and ** indicate statistical significance at the 99% and 95% confidence levels, respectively</p>
+  </div>
+  <table>
+    <thead>
+      <tr><th>模式 Model</th><th>SSP1-2.6</th><th>SSP2-4.5</th><th>SSP3-7.0</th><th>SSP5-8.5</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>MME</td><td>-0.59**</td><td>-0.62**</td><td>-0.67**</td><td>-0.64**</td></tr>
+      <tr><td>ACCESS-CM2</td><td>-0.56**</td><td>-0.55**</td><td>-0.60**</td><td>-0.49**</td></tr>
+      <tr><td>ACCESS-ESM1-5</td><td>-0.69**</td><td>-0.68**</td><td>-0.60**</td><td>-0.74**</td></tr>
+      <tr><td>AWI-CM-1-1-MR</td><td>-0.69**</td><td>-0.65**</td><td>-0.57**</td><td>-0.53**</td></tr>
+      <tr><td>BCC-CSM2-MR</td><td>-0.66**</td><td>-0.56**</td><td>-0.59**</td><td>-0.52**</td></tr>
+      <tr><td>CAMS-CSM1-0</td><td>-0.48**</td><td>-0.19</td><td>-0.28</td><td>-0.30*</td></tr>
+      <tr><td>CanESM5</td><td>-0.58**</td><td>-0.65**</td><td>-0.69**</td><td>-0.70**</td></tr>
+      <tr><td>CESM2-WACCM</td><td>-0.32*</td><td>-0.27</td><td>-0.47**</td><td>-0.46**</td></tr>
+      <tr><td>CMCC-CM2-SR5</td><td>-0.74**</td><td>-0.67**</td><td>-0.52**</td><td>-0.56**</td></tr>
+      <tr><td>EC-Earth3</td><td>-0.61**</td><td>-0.45**</td><td>-0.53**</td><td>-0.38**</td></tr>
+      <tr><td>EC-Earth3-Veg</td><td>-0.45**</td><td>-0.41**</td><td>-0.41**</td><td>-0.36*</td></tr>
+      <tr><td>FGOALS-f3-L</td><td>-0.52**</td><td>-0.44**</td><td>-0.76**</td><td>-0.74**</td></tr>
+      <tr><td>FGOALS-g3</td><td>-0.64**</td><td>-0.66**</td><td>-0.71**</td><td>-0.52**</td></tr>
+      <tr><td>INM-CM4-8</td><td>-0.54**</td><td>-0.66**</td><td>-0.63**</td><td>-0.60**</td></tr>
+      <tr><td>INM-CM5-0</td><td>-0.60**</td><td>-0.44**</td><td>-0.53**</td><td>-0.43**</td></tr>
+      <tr><td>IPSL-CM6A-LR</td><td>-0.46**</td><td>-0.55**</td><td>-0.48**</td><td>-0.43**</td></tr>
+      <tr><td>KACE-1-0-G</td><td>-0.47**</td><td>-0.56**</td><td>-0.43**</td><td>-0.57**</td></tr>
+      <tr><td>MIROC6</td><td>-0.60**</td><td>-0.79**</td><td>-0.61**</td><td>-0.78**</td></tr>
+      <tr><td>MPI-ESM1-2-HR</td><td>-0.71**</td><td>-0.64**</td><td>-0.71**</td><td>-0.52**</td></tr>
+      <tr><td>MPI-ESM1-2-LR</td><td>-0.63**</td><td>-0.45**</td><td>-0.53**</td><td>-0.58**</td></tr>
+      <tr><td>MRI-ESM2-0</td><td>-0.44**</td><td>-0.42**</td><td>-0.41**</td><td>-0.50**</td></tr>
+      <tr><td>NorESM2-LM</td><td>-0.75**</td><td>-0.50**</td><td>-0.71**</td><td>-0.62**</td></tr>
+      <tr><td>NorESM2-MM</td><td>-0.69**</td><td>-0.67**</td><td>-0.50**</td><td>-0.51**</td></tr>
+    </tbody>
+  </table>
+
+<div class="pair" data-id="p19-s02">
+  <p class="zh">除 SSP2-4.5 下的 CAMS-CSM1-0 和 CESM2-WACCM 以及 SSP3-7.0 下的 CAMS-CSM1-0 外，所有模式在所有情景下 AI 与 PI 之间均存在统计显著的负相关。</p>
+  <p class="en">There is a statistically significant negative correlation between AI and PI for all models and scenarios except for CAMS-CSM1-0 and CESM2-WACCM under SSP2-4.5 and CAMS-CSM1-0 under SSP3-7.0.</p>
+</div>
+<div class="pair" data-id="p19-s03">
+  <p class="zh">总体而言，AI 与 PI 之间的负相关很强且显著，表明四种情景下 AI 与 PI 之间对应关系紧密。</p>
+  <p class="en">Generally, the negative correlation between the AI and PI is large and significant, which suggests a close correspondence between the AI and PI under four scenarios.</p>
+</div>
+<div class="pair" data-id="p19-s04">
+  <p class="zh">同样，MME 也表现出 AI 与 PI 之间的强负相关，SSP1-2.6、SSP2-4.5、SSP3-7.0 和 SSP5-8.5 下的相关系数分别为 −0.59、−0.62、−0.67 和 −0.64。</p>
+  <p class="en">Similarly, the MME also shows a strong negative correlation between AI and PI, with correlation coefficients being −0.59, −0.62, −0.67, and −0.64 for SSP1-2.6, SSP2-4.5, SSP3-7.0, and SSP5-8.5, respectively.</p>
+</div>
+<div class="pair" data-id="p19-s05">
+  <p class="zh">这些结果与 Zhou（2016）的发现高度一致，表明未来亚洲–北太平洋扇区对流层上层纬向 T′ 的反相跷跷板振荡将持续存在。</p>
+  <p class="en">These results are in close agreement with the findings of Zhou (2016), which indicate future continuation of the out-of-phase seesaw oscillation in zonal T′ in the upper troposphere over the Asia–North Pacific sector.</p>
+</div>
+<div class="pair" data-id="p19-s06">
+  <p class="zh">图 7 给出了 APOI 年际变率的历史模拟（1995–2014 年）与未来预估。</p>
+  <p class="en">Figure 7 shows the historical simulations (1995–2014) and future projections of the interannual variability of the APOI.</p>
+</div>
+<figure id="fig07">
+<img src="../../assets/3f962a65202b6d2a6a0b7380ce7896bb224596c2b5f157b69a24528236053453.png" alt="Figure 7"/>
+<figcaption>
+<div class="pair" data-id="fig7-s01">
+  <p class="zh">图 7　经一阶 20 年低通 Butterworth 滤波后，SSP1-2.6（绿）、SSP2-4.5（蓝）、SSP3-7.0（橙）和 SSP5-8.5（红）情景下相对于 1995–2014 年历史模拟（黑）的 APOI 预估变化。</p>
+  <p class="en">Fig. 7 Projected changes in APOI under SSP1-2.6 (green), SSP2-4.5 (blue), SSP3-7.0 (orange) and SSP5-8.5 (red) relative to the historical simulation for 1995–2014 (black) using a first-order 20-year low-pass Butterworth filter.</p>
+</div>
+<div class="pair" data-id="fig7-s02">
+  <p class="zh">实线表示 MME，各曲线周围的阴影表示第 25 至第 75 百分位之间的模式间离散度</p>
+  <p class="en">Solid lines represent the MME, and shading around each curve indicates the inter-model spread between the 25th and 75th percentiles</p>
+</div>
+</figcaption>
+</figure>
+<div class="pair" data-id="p19-s07">
+  <p class="zh">相对于历史模拟的平均，在全部四种 SSP 情景下，APO 在 21 世纪内预估将持续减弱。</p>
+  <p class="en">Relative to the mean of the historical simulations, the APO is projected to decrease throughout the 21st century under all four SSPs scenarios.</p>
+</div>
+<div class="pair" data-id="p19-s08">
+  <p class="zh">在 2050 年代之前，不同情景下减弱速率的差异很小。</p>
+  <p class="en">Before the 2050s, differences between the rates of decrease under different scenarios are small.</p>
+</div>
+<div class="pair" data-id="p19-s09">
+  <p class="zh">在 SSP2-4.5、SSP3-7.0 和 SSP5-8.5 下，APO 预估在 21 世纪中后期继续减弱；而在 SSP1-2.6 情景下，APO 预估先略有增强，随后在 21 世纪最后十年转为减弱。</p>
+  <p class="en">Under SSP2-4.5, SSP3-7.0, and SSP5-8.5, APO is projected to continue to decrease during the mid and late 21st century, but the APO under SSP1-2.6 scenario is projected to increase slightly initially and then decrease over the last decade of the 21st century.</p>
+</div>
+<div class="pair" data-id="p19-s10">
+  <p class="zh">因此，APO 的长期变化随情景而异。</p>
+  <p class="en">Consequently, APO changes over the long term vary with scenario.</p>
+</div>
+<div class="pair" data-id="p19-s11">
+  <p class="zh">与当前气候相比，21 世纪末 SSP5-8.5 下 APOI 的减弱幅度最大（−0.37 °C），其次为 SSP2-4.5（−0.24 °C）和 SSP3-7.0（−0.17 °C），SSP1-2.6 预估的减弱最小（−0.17 °C）。</p>
+  <p class="en">In contrast to the current climate, the APOI under SSP5-8.5 exhibits the largest decreasing amplitude (-0.37 °C) at the end of the 21st century, followed by SSP2-4.5 (-0.24 °C) and SSP3-7.0 (-0.17 °C), and SSP1-2.6 projects the least decline (-0.17 °C).</p>
+</div>
+<div class="pair" data-id="p19-s12">
+  <p class="zh">此外，辐射强迫越高的情景模式间离散度越大，且大多数模式预估 21 世纪内为减弱趋势。</p>
+  <p class="en">Furthermore, the inter-model spread is larger for scenarios with higher radiative forcing scenarios, and most models project weakening trends throughout the 21st century.</p>
+</div>
+<div class="pair" data-id="p19-s13">
+  <p class="zh">为考察对流层上层 T′ 的未来空间变化，我们分析了四种情景下 2050–2099 年相对于 1965–2014 年垂直平均（500–200 hPa）JJA 平均 T′ 的 MME 预估变化的空间型态。</p>
+  <p class="en">To examine future spatial changes in upper-tropospheric T′, we examined the spatial pattern of the MME projected changes of the vertically averaged (500–200 hPa) JJA mean T′ for 2050–2099 relative to 1965–2014 under four scenarios.</p>
+</div>
+<div class="pair" data-id="p19-s14">
+  <p class="zh">在 SSP1-2.6 情景下，大振幅的负（正）T′ 值主要位于亚洲（北太平洋）上空，最小（最大）值低于 −0.3 °C（高于 0.1 °C）（图 8a）。</p>
+  <p class="en">For the SSP1-2.6 scenario, negative (positive) T′ values with large magnitudes are mainly over Asia (the North Pacific), with the minimum (maximum) values lower (higher) than −0.3 °C (0.1 °C) (Fig. 8a).</p>
+</div>
+<figure id="fig08">
+<img src="../../assets/bd8f9b18a40b22270d3a1842ec92b9c62f93b24c69cdba8e7fd49fa2f0923d80.png" alt="Figure 8"/>
+<figcaption>
+<div class="pair" data-id="fig8-s01">
+  <p class="zh">图 8　a SSP1-2.6、b SSP2-4.5、c SSP3-7.0 和 d SSP5-8.5 情景下，2050–2099 年相对于 1965–2014 年垂直平均（500–200 hPa）JJA 平均 T′（°C）的 MME 预估变化。</p>
+  <p class="en">Fig. 8 The MME projected changes of the vertical averaged (500–200 hPa) JJA mean T′ (°C) for 2050–2099 relative to 1965–2014 under a SSP1-2.6, b SSP2-4.5, c SSP3-7.0 and d SSP5-8.5 scenarios.</p>
+</div>
+<div class="pair" data-id="fig8-s02">
+  <p class="zh">浅色和深色阴影分别表示 95% 和 99% 置信水平上的统计显著性</p>
+  <p class="en">Light and dark shadings indicate statistical significance at the 95% and 99% confidence levels, respectively</p>
+</div>
+</figcaption>
+</figure>
+<div class="pair" data-id="p19-s15">
+  <p class="zh">在 SSP2-4.5、SSP3-7.0 和 SSP5-8.5 下，变化型态相似，仅强度不同。</p>
+  <p class="en">Under SSP2-4.5, SSP3-7.0, and SSP5-8.5, there are similar changes with varying degrees of intensity.</p>
+</div>
+<div class="pair" data-id="p19-s16">
+  <p class="zh">尽管 T′ 变化的振幅不同，CMIP6 模式在全部四种情景下都呈现出相似的 T′ 型态，这意味着亚洲与北太平洋之间对流层上层热对比的减弱可能导致 21 世纪 APO 减弱。</p>
+  <p class="en">Despite the different amplitudes of the T′ changes, CMIP6 models exhibit a similar T′ pattern under all four scenarios, signifying that the reduced upper-tropospheric thermal contrast between Asia and the North Pacific may leads to a weakened APO in the 21st century.</p>
+</div>
+<div class="pair" data-id="p19-s17">
+  <p class="zh">这些模式还预估了不同 SSP 情景下 T′ 垂直结构的显著变化。</p>
+  <p class="en">The models also project notable changes in the vertical structure of T′ under different SSPs scenarios.</p>
+</div>
+<div class="pair" data-id="p19-s18">
+  <p class="zh">图 9 给出了沿 30° N 的 JJA 平均 T′ 在 2050–2099 年相对于 1965–2014 年的 MME 预估变化的经度–高度剖面。</p>
+  <p class="en">Figure 9 shows the longitude–height cross sections of MME projected changes in the JJA mean T′ along 30° N for 2050–2099 relative to 1965–2014.</p>
+</div>
+<figure id="fig09">
+<img src="../../assets/42571dcec0c99eb6e65cfc346b88f7fe74087e8202f9f39e7aeffcdbbe500a2c.png" alt="Figure 9"/>
+<figcaption>
+<div class="pair" data-id="fig9-s01">
+  <p class="zh">图 9　a SSP1-2.6、b SSP2-4.5、c SSP3-7.0 和 d SSP5-8.5 情景下，2050–2099 年相对于 1965–2014 年 JJA 平均 T′（°C）MME 预估变化的经度–高度剖面（沿 30°N）。</p>
+  <p class="en">Fig. 9 Longitude-height cross-section (along 30°N) of the MME projected changes of the JJA mean T′ (°C) for 2050–2099 relative to 1965–2014 under a SSP1-2.6, b SSP2-4.5, c SSP3-7.0 and d SSP5-8.5 scenarios, respectively.</p>
+</div>
+<div class="pair" data-id="fig9-s02">
+  <p class="zh">浅色和深色阴影分别表示 95% 和 99% 置信水平上的统计显著性</p>
+  <p class="en">Light and dark shadings indicate statistical significance at the 95% and 99% confidence levels, respectively</p>
+</div>
+</figcaption>
+</figure>
+<div class="pair" data-id="p19-s19">
+  <p class="zh">在所有情景下，500–200 hPa 之间的 T′ 在亚洲上空显著减小，在北太平洋上空显著增大。</p>
+  <p class="en">Under all scenarios, T′ between 500 and 200 hPa decreases considerably over Asia and increases considerably over the North Pacific.</p>
+</div>
+<div class="pair" data-id="p19-s20">
+  <p class="zh">总体而言，与 SSP1-2.6 和 SSP2-4.5 情景相比，SSP3-7.0 和 SSP5-8.5 情景下的变化更为显著，并可能影响 APO 的强度。</p>
+  <p class="en">In general, the changes are more pronounced under the SSP3-7.0 and SSP5-8.5 scenarios compared to the SSP1-2.6 and SSP2-4.5 scenarios and are likely to affect the strength of the APO.</p>
+</div>
+<div class="pair" data-id="p19-s21">
+  <p class="zh">还值得注意的是，亚洲和北太平洋上空整个中对流层至上对流层的异常增暖和冷却中心随高度增加向西倾斜。</p>
+  <p class="en">It is also worth noting that regarding the anomalous warming and cooling above Asia and North Pacific throughout the mid-to-upper troposphere, these anomalous centers tilt westward with increasing height.</p>
+</div>
+<div class="pair" data-id="p19-s22">
+  <p class="zh">这种结构意味着未来 APO 相对于其当前位置将略微东移。</p>
+  <p class="en">Such a structure implies a slight eastward shift of the APO in the future relative to its present-day location.</p>
+</div>
+<div class="pair" data-id="p19-s23">
+  <p class="zh">关于 21 世纪中后期四种 SSP 情景下 APO 强度的变化，预估 APO 强度将随辐射强迫增大而显著减弱（图 10）。</p>
+  <p class="en">Regarding the changes in APO intensity under four SSPs scenarios during the middle and late 21st century, the APO intensity is projected to decrease considerably as radiative forcing increases (Fig. 10).</p>
+</div>
+<figure id="fig10">
+<img src="../../assets/56d6a6b5167f1578c437dff922dc2530a93b4243cee5b39c8beec90f6e5cb568.png" alt="Figure 10"/>
+<figcaption>
+<div class="pair" data-id="fig10-s01">
+  <p class="zh">图 10　SSP1-2.6（绿）、SSP2-4.5（蓝）、SSP3-7.0（橙）和 SSP5-8.5（红）情景下，2050–2099 年相对于 1965–2014 年 APOI（°C）预估变化的箱线图。</p>
+  <p class="en">Fig. 10 Box-and-Whisker plots of projected changes in APOI (°C) for 2050–2099 relative to 1965–2014 under SSP1-2.6 (green), SSP2-4.5 (blue), SSP3-7.0 (orange) and SSP5-8.5 (red) scenarios, respectively.</p>
+</div>
+<div class="pair" data-id="fig10-s02">
+  <p class="zh">箱内横线表示多模式中位数；须线表示模式间极差；箱体表示第 25 至第 75 百分位的四分位区间</p>
+  <p class="en">The horizontal line in the box denotes the multi-model median; the whiskers denote the inter-model range; and the boxes denote the model spread of the 25th to 75th interquartile</p>
+</div>
+</figcaption>
+</figure>
+<div class="pair" data-id="p19-s24">
+  <p class="zh">SSP1-2.6、SSP2-4.5、SSP3-7.0 和 SSP5-8.5 下 APO 强度的多模式中位数分别为 −0.02、−0.13、−0.14 和 −0.15 °C。</p>
+  <p class="en">The multi-model median APO intensities for SSP1-2.6, SSP2-4.5, SSP3-7.0, and SSP5-8.5 are −0.02, −0.13, −0.14, and −0.15 °C, respectively.</p>
+</div>
+<div class="pair" data-id="p19-s25">
+  <p class="zh">此外，各个模式之间存在很大差异：SSP1-2.6 下介于 −10.1%（NorESM2-LM）到 6.5%（MRI-ESM2-0）之间，SSP2-4.5 下介于 −14.0%（NorESM2-LM）到 4.1%（BCC-CSM2-MR）之间，SSP3-7.0 下介于 −12.3%（NorESM2-LM）到 5.5%（BCC-CSM2-MR）之间，SSP5-8.5 下介于 −12.4%（ACCESS-CM2）到 6.0%（BCC-CSM2-MR）之间。</p>
+  <p class="en">Furthermore, a large spread is observed among individual models, such that they range from -10.1% (NorESM2-LM) to 6.5% (MRI-ESM2-0) for SSP1-2.6, -14.0% (NorESM2-LM) to 4.1% (BCC-CSM2-MR) for SSP2-4.5, -12.3% (NorESM2-LM) to 5.5% (BCC-CSM2-MR) for SSP3-7.0, and -12.4% (ACCESS-CM2) to 6.0% (BCC-CSM2-MR) for SSP5-8.5, respectively.</p>
+</div>
+<div class="pair" data-id="p19-s26">
+  <p class="zh">表 3 总结了四种 SSP 情景下相对于 1965–2014 年的 APOI 预估变化。</p>
+  <p class="en">Table 3 summarizes the projected APOI changes under the four SSPs scenarios relative to 1965–2014.</p>
+</div>
+<div class="table-block" id="table3">
+  <div class="pair" data-id="tab3-cap">
+    <p class="zh">表 3　四种 SSP 情景下 2050–2099 年相对于 1965–2014 年的 APOI 预估变化范围（幅度与百分比）</p>
+    <p class="en">Table 3 The projected ranges (amplitude and percentage) of APOI change for 2050–2099 relative to 1965–2014 under four SSPs scenarios</p>
+  </div>
+  <table>
+    <thead>
+      <tr><th rowspan="2">模式 Model</th><th colspan="2">SSP1-2.6</th><th colspan="2">SSP2-4.5</th><th colspan="2">SSP3-7.0</th><th colspan="2">SSP5-8.5</th></tr>
+      <tr><th>幅度 Amplitude (°C)</th><th>百分比 Percentage (%)</th><th>幅度 Amplitude (°C)</th><th>百分比 Percentage (%)</th><th>幅度 Amplitude (°C)</th><th>百分比 Percentage (%)</th><th>幅度 Amplitude (°C)</th><th>百分比 Percentage (%)</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>MME</td><td>-0.04</td><td>-0.74</td><td>-0.12</td><td>-2.48</td><td>-0.13</td><td>-2.65</td><td>-0.17</td><td>-3.43</td></tr>
+      <tr><td>ACCESS-CM2</td><td>-0.19</td><td>-4.02</td><td>-0.39</td><td>-8.23</td><td>-0.38</td><td>-7.98</td><td>-0.59</td><td>-12.37</td></tr>
+      <tr><td>ACCESS-ESM1-5</td><td>0.06</td><td>0.98</td><td>-0.09</td><td>-1.60</td><td>-0.08</td><td>-1.45</td><td>0.09</td><td>1.60</td></tr>
+      <tr><td>AWI-CM-1-1-MR</td><td>-0.16</td><td>-3.25</td><td>-0.20</td><td>-3.97</td><td>-0.32</td><td>-6.31</td><td>-0.34</td><td>-6.85</td></tr>
+      <tr><td>BCC-CSM2-MR</td><td>0.09</td><td>1.95</td><td>0.20</td><td>4.13</td><td>0.26</td><td>5.49</td><td>0.29</td><td>5.96</td></tr>
+      <tr><td>CAMS-CSM1-0</td><td>-0.14</td><td>-3.28</td><td>-0.25</td><td>-5.97</td><td>-0.23</td><td>-5.68</td><td>-0.30</td><td>-7.18</td></tr>
+      <tr><td>CanESM5</td><td>-0.21</td><td>-3.64</td><td>-0.20</td><td>-3.46</td><td>-0.06</td><td>-0.98</td><td>-0.13</td><td>-2.36</td></tr>
+      <tr><td>CESM2-WACCM</td><td>-0.16</td><td>-3.02</td><td>-0.08</td><td>-1.61</td><td>-0.12</td><td>-2.38</td><td>-0.08</td><td>-1.50</td></tr>
+      <tr><td>CMCC-CM2-SR5</td><td>0.23</td><td>6.09</td><td>0.08</td><td>2.07</td><td>0.18</td><td>4.74</td><td>0.00</td><td>0.10</td></tr>
+      <tr><td>EC-Earth3</td><td>-0.08</td><td>-1.93</td><td>-0.31</td><td>-7.19</td><td>-0.36</td><td>-8.34</td><td>-0.45</td><td>-10.53</td></tr>
+      <tr><td>EC-Earth3-Veg</td><td>0.04</td><td>1.02</td><td>-0.02</td><td>-0.45</td><td>-0.15</td><td>-3.77</td><td>-0.28</td><td>-6.99</td></tr>
+      <tr><td>FGOALS-f3-L</td><td>-0.03</td><td>-0.75</td><td>0.05</td><td>1.24</td><td>0.04</td><td>0.82</td><td>0.05</td><td>1.08</td></tr>
+      <tr><td>FGOALS-g3</td><td>-0.09</td><td>-1.87</td><td>-0.23</td><td>-4.67</td><td>-0.27</td><td>-5.57</td><td>-0.44</td><td>-9.11</td></tr>
+      <tr><td>INM-CM4-8</td><td>0.09</td><td>1.74</td><td>0.21</td><td>3.88</td><td>0.11</td><td>1.98</td><td>0.02</td><td>0.36</td></tr>
+      <tr><td>INM-CM5-0</td><td>0.03</td><td>0.57</td><td>0.08</td><td>1.54</td><td>0.06</td><td>1.07</td><td>0.13</td><td>2.37</td></tr>
+      <tr><td>IPSL-CM6A-LR</td><td>0.05</td><td>1.19</td><td>-0.12</td><td>-2.66</td><td>-0.16</td><td>-3.59</td><td>-0.19</td><td>-4.22</td></tr>
+      <tr><td>KACE-1-0-G</td><td>0.01</td><td>0.24</td><td>-0.14</td><td>-2.81</td><td>0.02</td><td>0.42</td><td>-0.16</td><td>-3.23</td></tr>
+      <tr><td>MIROC6</td><td>0.08</td><td>1.56</td><td>0.11</td><td>2.14</td><td>-0.03</td><td>-0.65</td><td>-0.02</td><td>-0.40</td></tr>
+      <tr><td>MPI-ESM1-2-HR</td><td>-0.02</td><td>-0.34</td><td>-0.17</td><td>-3.79</td><td>-0.14</td><td>-3.10</td><td>-0.18</td><td>-3.85</td></tr>
+      <tr><td>MPI-ESM1-2-LR</td><td>-0.02</td><td>-0.41</td><td>-0.17</td><td>-3.22</td><td>-0.14</td><td>-2.74</td><td>-0.05</td><td>-0.90</td></tr>
+      <tr><td>MRI-ESM2-0</td><td>0.25</td><td>6.53</td><td>0.08</td><td>2.18</td><td>-0.14</td><td>-3.60</td><td>-0.03</td><td>-0.73</td></tr>
+      <tr><td>NorESM2-LM</td><td>-0.59</td><td>-10.11</td><td>-0.82</td><td>-14.02</td><td>-0.72</td><td>-12.32</td><td>-0.68</td><td>-11.68</td></tr>
+      <tr><td>NorESM2-MM</td><td>-0.04</td><td>-0.76</td><td>-0.29</td><td>-5.02</td><td>-0.20</td><td>-3.46</td><td>-0.34</td><td>-5.88</td></tr>
+    </tbody>
+  </table>
+
+<div class="pair" data-id="p19-s27">
+  <p class="zh">从图 10 和表 3 可以明显看出，高排放情景下各模式之间的离散度较大，因为更强的外强迫会导致更大的不确定性（Roe and Baker 2007）。</p>
+  <p class="en">It is evident from Fig. 10 and Table 3 that the model spread among individual models is large for high emission scenarios because a stronger external forcing causes greater uncertainty (Roe and Baker 2007).</p>
+</div>
+<div class="pair" data-id="p19-s28">
+  <p class="zh">在 SSP1-2.6 和 SSP2-4.5 下，分别有多达 55% 和 68% 的 22 个 CMIP6 GCM 预估 APOI 呈负趋势。</p>
+  <p class="en">Under SSP1-2.6 and SSP2-4.5, up to 55% and 68% of the 22 CMIP6 GCMs project a negative trend in APOI, respectively.</p>
+</div>
+<div class="pair" data-id="p19-s29">
+  <p class="zh">此外，在 SSP3-7.0 和 SSP5-8.5 下，也有 73% 的模式预估 APOI 呈负趋势。</p>
+  <p class="en">Furthermore, a negative APOI trend is also found in 73% of the models under SSP3-7.0 and SSP5-8.5.</p>
+</div>
+<div class="pair" data-id="p19-s30">
+  <p class="zh">此外，2050–2099 年与 1965–2014 年之间的 MME 平均 APO 强度预估将分别下降 0.74%、2.48%、2.65% 和 3.43%。</p>
+  <p class="en">Additionally, the MME mean APO intensity between 2050–2099 and 1965–2014 is projected to decrease in 0.74%, 2.48%, 2.65%, and 3.43% of the models, respectively.</p>
+</div>
+<div class="pair" data-id="p19-s31">
+  <p class="zh">总体而言，预计 21 世纪中后期 APOI 将减弱。</p>
+  <p class="en">In general, it is anticipated that the projected APOI will weaken during the mid-to-late 21st century.</p>
+</div>
+<div class="pair" data-id="p19-s32">
+  <p class="zh">排放情景越高，预估这一变化的模式就越多。</p>
+  <p class="en">The higher the emission scenarios, the greater the number of models that concur with this change.</p>
+</div>
+
+</section>
+<h2><span class="hz">5 结论与讨论</span><span class="he"> 5 Conclusions and discussion</span></h2>
+<section>
+<div class="pair" data-id="p20-s01">
+  <p class="zh">本研究通过将模式模拟与 1950–2014 年 NCEP/NCAR 再分析资料进行比较，评估了 22 个 CMIP6 GCM 模拟 APO 气候型态、年际变率和长期趋势的能力。</p>
+  <p class="en">In this study, we assessed the ability of 22 CMIP6 GCMs to simulate the climatological pattern, interannual variability, and long-term trend of the APO by comparing model simulations with NCEP/NCAR reanalysis data from 1950–2014.</p>
+</div>
+<div class="pair" data-id="p20-s02">
+  <p class="zh">我们还考察了四种情景下 APO 变化的模式预估。</p>
+  <p class="en">We also examined model projections of changes in the APO under four scenarios.</p>
+</div>
+<div class="pair" data-id="p20-s03">
+  <p class="zh">结果表明，大多数模式能够在水平和垂直两个方向上刻画 APO 型态。</p>
+  <p class="en">Results show that most models can capture the APO pattern in both the horizontal and vertical directions.</p>
+</div>
+<div class="pair" data-id="p20-s04">
+  <p class="zh">历史模拟合理再现了对流层上层 T′ 的空间分布，大多数模式的 SCC 超过 0.9，RMSE 低于 0.5。</p>
+  <p class="en">The spatial distribution of the upper-tropospheric T′ is reasonably reproduced in the historical simulations, with SCC exceeds 0.9 and RMSE is below 0.5 for most models.</p>
+</div>
+<div class="pair" data-id="p20-s05">
+  <p class="zh">全部 22 个模式都一致再现了亚洲与北太平洋对流层上层 T′ 之间的反相关系。</p>
+  <p class="en">All of the 22 models consistently reproduce the inverse relationship between upper-tropospheric T′ in Asia and that in the North Pacific.</p>
+</div>
+<div class="pair" data-id="p20-s06">
+  <p class="zh">总体而言，各个单一模式再现 APO 长期趋势和年际变率的能力相对较低，而 MME 平均再现再分析资料中 APO 特征的能力则明显更高。</p>
+  <p class="en">In general, the ability of each individual model to reproduce the long-term trend and the interannual variability of the APO is relatively low, while the ability of the MME mean to reproduce APO features in the reanalysis data is considerably higher.</p>
+</div>
+<div class="pair" data-id="p20-s07">
+  <p class="zh">对于不同 SSP 情景下的未来变化，其遥相关型态在三维结构和量级上都与当前 APO 型态相似，但模式预估其垂直方向出现倾斜，表明 APO 型态将略微东移。</p>
+  <p class="en">For the future changes under different SSPs scenarios, the teleconnection pattern resembles the present APO pattern in both three-dimensional structure and magnitude, but the models project a tilt in the vertical direction, indicating a slight eastward shift of the APO pattern.</p>
+</div>
+<div class="pair" data-id="p20-s08">
+  <p class="zh">还值得注意的是，大多数模式和 MME 平均都预估 APO 在不同 SSP 情景下减弱，这意味着亚洲大陆与太平洋之间对流层上层热对比的减小，在高排放情景下尤为明显。</p>
+  <p class="en">It is also notable that most models and the MME mean project the weakening of the APO under different SSPs scenarios, implying a reduction in the upper-tropospheric thermal contrast between Asia continent and the Pacific Ocean, especially under scenarios of high emissions.</p>
+</div>
+<div class="pair" data-id="p20-s09">
+  <p class="zh">关于未来预估的不确定性，不同模式、不同气候情景下预估的 APOI 在绝对值和长期趋势两方面都存在很大的离散度和差异。</p>
+  <p class="en">Regarding uncertainty in the future projections, the projected APOI show very large spread and discrepancies among different models and different climate scenarios both in terms of absolute values and long-term trends.</p>
+</div>
+<div class="pair" data-id="p20-s10">
+  <p class="zh">作为副热带地区的主导遥相关模态，APO 可用来度量对流层上层温度的变率以及亚洲与北太平洋之间相伴的大尺度大气环流变化（Zhao et al. 2007, 2008）。</p>
+  <p class="en">As a dominant teleconnection mode over subtropical region, the APO can used as a measure of the variability of upper-tropospheric temperatures and associated large-scale atmospheric circulations between Asia and the North Pacific (Zhao et al. 2007, 2008).</p>
+</div>
+<div class="pair" data-id="p20-s11">
+  <p class="zh">因此，理解 APO 的量级与空间变率及其与气候变化的关系十分重要。</p>
+  <p class="en">As a result, it is important to understand the magnitude and spatial variability of the APO and their relationships with climate change.</p>
+</div>
+<div class="pair" data-id="p20-s12">
+  <p class="zh">由于当前 CMIP6 GCM 在再现历史 APO 的年际变率和年代际趋势方面仍存在显著偏差，对其未来预估的解读应当谨慎。</p>
+  <p class="en">Since there are still remarkable biases in representing the inter-annual variability and decadal trend of historical APO in the current CMIP6 GCMs, future projection should be interpreted with caution.</p>
+</div>
+<div class="pair" data-id="p20-s13">
+  <p class="zh">考虑到 GCM 自身的不确定性，未来研究可利用高分辨率模式比较计划（High Resolution Model Intercomparison Project）的输出来降低不确定性，使预估更加可靠。</p>
+  <p class="en">Considering the uncertainties in the GCMs itself, output from the High Resolution Model Intercomparison Project can be used in future studies to reduce the uncertainties and make projections with increased reliability.</p>
+</div>
+<div class="pair" data-id="p20-s14">
+  <p class="zh">此外，为降低表现相对较差模式的影响，未来研究可引入综合评级指数（Jiang et al. 2015），作为挑选构成 MME 的优选模式的依据。</p>
+  <p class="en">Additionally, to reduce impacts of models that have relatively poor performance, the comprehensive rating index (Jiang et al. 2015) can be introduced as a basis for the selection of optimal models that emerge as MME in future studies.</p>
+</div>
+<div class="pair" data-id="p20-s15">
+  <p class="zh">鉴于以往许多研究已报道了 APO 与 EASM（Zhao et al. 2007, 2010, 2012a）、WPSH（Liu et al. 2011）等大气环流以及 APO 与 NAO（Zhou and Wang 2015）等其他大气遥相关之间的密切关系，一个自然的问题是：APO 与亚太扇区大气环流之间的这些关系在未来预估中能否保持稳定，这需要未来给予更多关注和讨论。</p>
+  <p class="en">Since many previous studies have reported close relationships between the APO and atmospheric circulations such as EASM (Zhao et al. 2007, 2010, 2012a) and WPSH (Liu et al. 2011) and between the APO and other atmospheric teleconnections such as the NAO (Zhou and Wang 2015), a question naturally arises as to whether the relationships between APO and atmospheric circulations over Asian–Pacific sector can maintain stability in the future projections that requires more attention and discussion in the future.</p>
+</div>
+
+</section>
+<h2><span class="hz">致谢</span><span class="he"> Acknowledgements</span></h2>
+<section>
+<div class="pair" data-id="p21-s01">
+  <p class="zh">我们衷心感谢各气候模式组（见表 1）产出并共享其模式输出。</p>
+  <p class="en">We sincerely thank the climate modeling groups (listed in Table 1) for producing and sharing their model output.</p>
+</div>
+<div class="pair" data-id="p21-s02">
+  <p class="zh">NCEP/NCAR 再分析资料取自 http://www.esrl.noaa.gov/psd。</p>
+  <p class="en">The NCEP/NCAR reanalysis data were obtained from http://www.esrl.noaa.gov/psd.</p>
+</div>
+<div class="pair" data-id="p22-s01">
+  <p class="zh">作者贡献：Wei Hua 和 Qin Hu 构思并设计了本研究。</p>
+  <p class="en">Author contribution Wei Hua and Qin Hu conceived and designed the study.</p>
+</div>
+<div class="pair" data-id="p22-s02">
+  <p class="zh">Changji Xia 分析了数据。</p>
+  <p class="en">Changji Xia analyzed the data.</p>
+</div>
+<div class="pair" data-id="p22-s03">
+  <p class="zh">Kaiqin Yang 和 Guangzhou Fan 对结果与结论提出了重要见解。</p>
+  <p class="en">Kaiqin Yang and Guangzhou Fan provided critical insights on the results and conclusions.</p>
+</div>
+<div class="pair" data-id="p22-s04">
+  <p class="zh">Changji Xia 和 Wei Hua 起草了论文初稿，全体作者均有实质性贡献。</p>
+  <p class="en">Changji Xia and Wei Hua drafted the manuscript, with a substantial contribution from all authors.</p>
+</div>
+
+</section>
+<h2><span class="hz">资助</span><span class="he"> Funding</span></h2>
+<section>
+<div class="pair" data-id="p23-s01">
+  <p class="zh">Hua 博士由国家自然科学基金（42275022）、第二次青藏高原综合科学考察研究计划（2019QZKK010203）和成都信息工程大学科技创新能力提升计划（KYQN202202）联合资助。</p>
+  <p class="en">Dr. Hua was jointly supported by the National Natural Science Foundation of China (42275022), the Second Tibetan Plateau Scientific Expedition and Research Program (2019QZKK010203) and the Scientific and Technological Innovation Capacity Improvement Project of Chengdu University of Information Technology (KYQN202202).</p>
+</div>
+<div class="pair" data-id="p23-s02">
+  <p class="zh">Hu 博士由四川省科技计划项目（2022NSFSC1092）资助。</p>
+  <p class="en">Dr. Hu was supported by the Science and Technology Planning Project of Sichuan Province (2022NSFSC1092).</p>
+</div>
+<div class="pair" data-id="p23-s03">
+  <p class="zh">Yang 博士由国家自然科学基金（42205058）资助。</p>
+  <p class="en">Dr. Yang was supported by the National Natural Science Foundation of China (42205058).</p>
+</div>
+<div class="pair" data-id="p23-s04">
+  <p class="zh">Fan 博士由国家自然科学基金（42075019）资助。</p>
+  <p class="en">Dr. Fan was supported by the National Natural Science Foundation of China (42075019).</p>
+</div>
+<div class="pair" data-id="p24-s01">
+  <p class="zh">数据可用性：本研究使用的所有数据集均公开可用。</p>
+  <p class="en">Data availability All data sets used in this study are publicly available.</p>
+</div>
+
+</section>
+<h2><span class="hz">声明</span><span class="he"> Declarations</span></h2>
+<section>
+<div class="pair" data-id="p25-s01">
+  <p class="zh">伦理审批：本研究无需申报任何伦理问题。</p>
+  <p class="en">Ethics approval This research has no ethical issue to declare.</p>
+</div>
+<div class="pair" data-id="p26-s01">
+  <p class="zh">参与同意：全体作者均确认对本研究有所贡献。</p>
+  <p class="en">Consent to participate All the authors admitted that they have contributed to the study.</p>
+</div>
+<div class="pair" data-id="p27-s01">
+  <p class="zh">发表同意：全体作者均同意本文的投稿与发表。</p>
+  <p class="en">Consent for publication All the authors agree to the submission and publication of the paper.</p>
+</div>
+<div class="pair" data-id="p28-s01">
+  <p class="zh">利益冲突：作者声明无利益冲突。</p>
+  <p class="en">Competing interests The authors declare no competing interests.</p>
+</div>
+<div class="pair" data-id="p29-s01">
+  <p class="zh">对于已出版地图中的管辖权主张及机构隶属信息，Springer Nature 保持中立。</p>
+  <p class="en">Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.</p>
+</div>
+
+</section>
+<script>
+const zh = document.getElementById('zh-only');
+const bi = document.getElementById('bilingual');
+zh.addEventListener('click', () => { document.body.classList.remove('show-en'); zh.classList.add('active'); bi.classList.remove('active'); });
+bi.addEventListener('click', () => { document.body.classList.add('show-en'); bi.classList.add('active'); zh.classList.remove('active'); });
+</script>
+</body>
+</html>
