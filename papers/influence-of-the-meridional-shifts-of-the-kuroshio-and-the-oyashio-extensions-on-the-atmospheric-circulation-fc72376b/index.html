@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="zh-CN" data-mode="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="color-scheme" content="dark">
+  <link rel="icon" href="data:,">
+  <meta name="paper-id" content="influence-of-the-meridional-shifts-of-the-kuroshio-and-the-oyashio-extensions-on-the-atmospheric-circulation-fc72376b">
+  <meta name="description" content="版权受限的中英双语学术导读：Frankignoul et al. (2011)，不是全文翻译。">
+  <title>黑潮与亲潮延伸体经向摆动如何联系大气环流｜中英双语学术导读</title>
+  <style>
+    :root{
+      --ink:#eaf4f6;--muted:#a6bcc2;--paper:#08171c;--panel:#0e242b;--panel2:#132f37;
+      --cyan:#6ce5dc;--cyan2:#24b9b4;--amber:#ffbd66;--line:#28505a;--danger:#ff8d80;
+      --shadow:0 18px 55px rgba(0,0,0,.28);--radius:22px;--content:1180px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;background:var(--paper)}
+    body{margin:0;color:var(--ink);background:
+      radial-gradient(circle at 84% 5%,rgba(36,185,180,.12),transparent 28rem),
+      linear-gradient(180deg,#07171b 0,#0a1d22 34rem,#08171c 100%);
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans CJK SC","PingFang SC","Microsoft YaHei",sans-serif;
+      font-size:16px;line-height:1.72;-webkit-font-smoothing:antialiased}
+    a{color:var(--cyan);text-underline-offset:3px} a:hover{color:#a9fff7}
+    button{font:inherit}.skip{position:absolute;left:-9999px;top:1rem;z-index:99;background:white;color:#051418;padding:.7rem 1rem;border-radius:10px}.skip:focus{left:1rem}
+    .topbar{position:sticky;top:0;z-index:30;background:rgba(7,23,27,.9);backdrop-filter:blur(18px);border-bottom:1px solid rgba(108,229,220,.15)}
+    .topbar-inner{max-width:var(--content);margin:auto;padding:.72rem 1.25rem;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+    .brand{display:flex;align-items:center;gap:.65rem;min-width:0}.brand-mark{width:.72rem;height:.72rem;border-radius:50%;background:var(--cyan);box-shadow:0 0 0 6px rgba(108,229,220,.1)}
+    .brand-text{font-weight:760;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.mode-status{color:var(--muted);font-size:.8rem;font-weight:600}
+    .switcher{display:flex;gap:.3rem;padding:.25rem;background:#071318;border:1px solid var(--line);border-radius:999px}
+    .switcher button{border:0;border-radius:999px;background:transparent;color:var(--muted);padding:.5rem .78rem;cursor:pointer;font-size:.84rem;font-weight:720;white-space:nowrap}
+    .switcher button[aria-pressed="true"]{background:var(--cyan);color:#032321;box-shadow:0 4px 15px rgba(36,185,180,.3)}
+    .hero{max-width:var(--content);margin:0 auto;padding:5.6rem 1.25rem 3.4rem;position:relative}
+    .hero:after{content:"";position:absolute;right:2rem;top:4.5rem;width:210px;height:210px;border:1px solid rgba(108,229,220,.18);border-radius:50%;box-shadow:0 0 0 42px rgba(108,229,220,.025),0 0 0 84px rgba(108,229,220,.018);pointer-events:none}
+    .eyebrow{display:inline-flex;align-items:center;gap:.55rem;color:var(--cyan);text-transform:uppercase;letter-spacing:.12em;font-size:.76rem;font-weight:820}.eyebrow:before{content:"";width:2rem;height:2px;background:var(--cyan)}
+    h1{font-family:Georgia,"Times New Roman","Songti SC",serif;font-size:clamp(2.35rem,5.7vw,5.5rem);line-height:1.02;letter-spacing:-.04em;max-width:950px;margin:1.3rem 0 1.5rem;text-wrap:balance;position:relative;z-index:1}
+    .hero-deck{max-width:790px;color:#c7dadd;font-size:clamp(1.04rem,1.6vw,1.28rem);line-height:1.65}
+    .pill-row{display:flex;flex-wrap:wrap;gap:.55rem;margin-top:1.9rem}.pill{border:1px solid var(--line);background:rgba(14,36,43,.7);color:#c8dadd;border-radius:999px;padding:.43rem .72rem;font-size:.8rem}
+    .rights{margin-top:2.3rem;max-width:900px;padding:1rem 1.1rem;border-radius:14px;border:1px solid rgba(255,141,128,.45);background:rgba(255,141,128,.08);color:#ffd6d1;font-weight:720;display:flex;gap:.7rem;align-items:flex-start}.rights:before{content:"!";display:grid;place-items:center;min-width:1.4rem;height:1.4rem;border-radius:50%;background:var(--danger);color:#2a0a08;line-height:1;font-weight:900;margin-top:.17rem}
+    .layout{max-width:var(--content);margin:auto;padding:0 1.25rem 5rem;display:grid;grid-template-columns:230px minmax(0,1fr);gap:2.4rem}.layout>*{min-width:0}
+    aside{position:relative}.toc{position:sticky;top:5.3rem;border-left:1px solid var(--line);padding-left:1rem}.toc-title{color:var(--muted);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;font-weight:800;margin-bottom:.7rem}.toc a{display:block;color:#9eb4ba;text-decoration:none;font-size:.84rem;padding:.31rem 0}.toc a:hover{color:var(--cyan)}
+    main{min-width:0}.section{scroll-margin-top:5.5rem;margin-bottom:4.7rem}.section-head{display:grid;grid-template-columns:auto 1fr;gap:1rem;align-items:center;margin-bottom:1.45rem}.section-no{font-family:Georgia,serif;color:var(--amber);font-size:1rem}.section-head h2{font-family:Georgia,"Times New Roman","Songti SC",serif;font-size:clamp(1.8rem,3.4vw,3rem);line-height:1.15;letter-spacing:-.025em;margin:0}.section-head h2.pair{margin:0}.section-head:after{content:"";height:1px;background:linear-gradient(90deg,var(--line),transparent);grid-column:1/-1}
+    .pair{margin:1rem 0}.lang-block{min-width:0}.lang-block h3{font-size:1.08rem;line-height:1.35;margin:0 0 .45rem;color:#f1fbfc}.lang-block p{margin:.36rem 0}.lang-block ul{margin:.5rem 0;padding-left:1.25rem}.lang-block li{margin:.35rem 0}
+    html[data-mode="zh"] [lang="en"],html[data-mode="en"] [lang="zh-CN"]{display:none!important}
+    html[data-mode="dual"] .pair{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:1.25rem;align-items:start}
+    html[data-mode="dual"] h1{font-size:clamp(2.5rem,4.25vw,4.25rem)}
+    html[data-mode="dual"] .pair>.lang-block{display:block!important}
+    html[data-mode="dual"] .pair>.lang-block+ .lang-block{border-left:1px solid var(--line);padding-left:1.25rem}
+    html[data-mode="dual"] .section-head h2.pair>.lang-block+ .lang-block{border:0;padding:0;color:#b9cdd1}
+    html[data-mode="dual"] .toc a [lang]+[lang]:before{content:" / ";color:var(--muted)}
+    .card{background:linear-gradient(145deg,rgba(19,47,55,.92),rgba(11,30,35,.92));border:1px solid var(--line);border-radius:var(--radius);padding:1.35rem 1.45rem;box-shadow:var(--shadow)}
+    .card.soft{box-shadow:none;background:rgba(14,36,43,.62)}.card.accent{border-color:rgba(108,229,220,.55);background:linear-gradient(145deg,rgba(21,62,68,.95),rgba(11,31,36,.95))}
+    .kicker{color:var(--amber);font-size:.72rem;font-weight:850;letter-spacing:.1em;text-transform:uppercase;margin-bottom:.35rem}.lead{font-size:1.12rem;color:#dcebee}
+    .grid-2,.grid-3{display:grid;gap:1rem}.grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}.grid-2>.pair,.grid-3>.pair{margin:0}
+    html[data-mode="dual"] .grid-2>.pair,html[data-mode="dual"] .grid-3>.pair{display:block}.grid-2 .card,.grid-3 .card{height:100%}
+    html[data-mode="dual"] .grid-2>.pair>.lang-block+ .lang-block,html[data-mode="dual"] .grid-3>.pair>.lang-block+ .lang-block{border-left:0;border-top:1px solid var(--line);padding:1rem 0 0;margin-top:1rem}
+    .meta{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.75rem}.meta .pair{margin:0}.meta .lang-block{height:100%;padding:1rem 1.1rem;border:1px solid var(--line);border-radius:14px;background:rgba(7,19,24,.6)}.meta strong{color:var(--amber);display:block;font-size:.74rem;letter-spacing:.07em;text-transform:uppercase;margin-bottom:.18rem}.meta code{font-size:.78rem;color:#c9dcdf;overflow-wrap:anywhere}
+    html[data-mode="dual"] .meta{grid-template-columns:1fr}.cite{display:inline-block;margin-left:.15rem;font-size:.68rem;font-weight:800;line-height:1.45;padding:.05rem .36rem;border:1px solid rgba(108,229,220,.35);border-radius:999px;text-decoration:none;vertical-align:.1em;color:var(--cyan);white-space:nowrap}
+    .flow{counter-reset:flow;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.75rem}.flow .pair{margin:0}.flow .card{position:relative;height:100%;padding-top:3.2rem}.flow .card:before{counter-increment:flow;content:counter(flow,decimal-leading-zero);position:absolute;top:.85rem;left:1.15rem;color:var(--cyan);font:700 1.1rem Georgia,serif}.flow .pair:not(:last-child) .card:after{content:"→";position:absolute;right:-1.02rem;top:50%;z-index:2;color:var(--amber);font-size:1.35rem}
+    html[data-mode="dual"] .flow .pair{display:block}html[data-mode="dual"] .flow .pair>.lang-block+ .lang-block{border:0;border-top:1px solid var(--line);padding:1rem 0 0;margin-top:1rem}
+    .compare{display:grid;grid-template-columns:1fr 1fr;gap:1rem}.compare>.pair{margin:0}.oe{border-top:3px solid var(--cyan)}.ke{border-top:3px solid var(--amber)}
+    .stat{font-family:Georgia,serif;font-size:2rem;line-height:1;color:var(--cyan);margin:.35rem 0}.stat small{font:600 .78rem -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--muted)}
+    .callout{border-left:3px solid var(--amber);padding:.3rem 0 .3rem 1rem;color:#d9e8ea}.warning{border-color:var(--danger)}
+    .term{display:inline-block;color:#091b20;background:var(--cyan);font-size:.72rem;font-weight:850;border-radius:999px;padding:.12rem .48rem;margin-right:.3rem}
+    .source-list{list-style:none;padding:0;margin:0}.source-list li{padding:1rem 0;border-bottom:1px solid var(--line)}.source-list li:last-child{border-bottom:0}.source-id{display:inline-grid;place-items:center;min-width:2.15rem;height:2.15rem;margin-right:.65rem;border-radius:10px;background:var(--cyan);color:#06201f;font-weight:900}.source-note{color:var(--muted);font-size:.86rem;margin-top:.25rem;padding-left:2.95rem}
+    footer{max-width:var(--content);margin:auto;padding:2rem 1.25rem 4rem;border-top:1px solid var(--line);color:var(--muted);font-size:.82rem}
+    .pair-id{display:none}.keep{white-space:nowrap}.noscript{max-width:var(--content);margin:1rem auto;padding:1rem;color:#ffe4bd;background:#402c0f}
+    @media(max-width:900px){.layout{grid-template-columns:1fr}.toc{position:static;display:flex;gap:.75rem;overflow:auto;border-left:0;border-bottom:1px solid var(--line);padding:0 0 .7rem}.toc-title{display:none}.toc a{white-space:nowrap}.hero:after{opacity:.45}.flow{grid-template-columns:repeat(2,minmax(0,1fr))}.flow .pair:nth-child(2) .card:after{display:none}}
+    @media(max-width:640px){body{font-size:15.5px}.topbar-inner{align-items:flex-start;flex-direction:column;gap:.55rem;padding:.62rem .9rem}.brand{width:100%}.mode-status{margin-left:auto}.switcher{width:100%}.switcher button{flex:1;padding:.48rem .25rem}.hero{padding:2.4rem .95rem 2.5rem}h1,html[data-mode="dual"] h1{font-size:2.55rem}.hero:after{display:none}.layout{padding:0 .95rem 4rem;gap:1.5rem}.section{margin-bottom:3.5rem;scroll-margin-top:8.2rem}.section-head{gap:.65rem}.grid-2,.grid-3,.compare,.meta,.flow{grid-template-columns:1fr}.flow .pair .card:after{content:"↓";right:50%;top:auto;bottom:-1.35rem}.flow .pair:nth-child(2) .card:after{display:block}.flow .pair:last-child .card:after{display:none}.card{padding:1.15rem}.rights{font-size:.91rem}html[data-mode="dual"] .pair{grid-template-columns:1fr;gap:.8rem}html[data-mode="dual"] .pair>.lang-block+ .lang-block{border-left:0;border-top:1px solid var(--line);padding:1rem 0 0}.source-note{padding-left:0}.source-id{display:flex;margin-bottom:.5rem}.toc{margin-inline:-.95rem;padding-inline:.95rem;flex-wrap:wrap;overflow:visible;gap:.3rem .85rem}.toc a{white-space:normal}}
+    @media print{.topbar,.toc,.skip{display:none}.layout{display:block}.hero{padding-top:2rem}.card{box-shadow:none;break-inside:avoid}body{background:#fff;color:#111}.lang-block,.hero-deck{color:#111!important}html[data-mode="zh"] [lang="en"],html[data-mode="en"] [lang="zh-CN"]{display:block!important}.pair{display:grid!important;grid-template-columns:1fr 1fr;gap:1rem}.lang-block+ .lang-block{border-left:1px solid #bbb;padding-left:1rem}.section-head h2,h1{color:#111}.source-list li{border-color:#bbb}}
+  </style>
+</head>
+<body>
+<a class="skip" href="#main">跳到正文 / Skip to content</a>
+<header class="topbar" aria-label="语言工具栏">
+  <div class="topbar-inner">
+    <div class="brand"><span class="brand-mark" aria-hidden="true"></span><span class="brand-text">SCHOLARLY GUIDE · REF 5</span><span class="mode-status" id="modeStatus">中文</span></div>
+    <div class="switcher" role="group" aria-label="Language view">
+      <button type="button" data-set-mode="zh" aria-pressed="true">中文</button>
+      <button type="button" data-set-mode="dual" aria-pressed="false">中英对照</button>
+      <button type="button" data-set-mode="en" aria-pressed="false">English</button>
+    </div>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="pair">
+    <div class="lang-block" lang="zh-CN" data-id="hero-eyebrow"><div class="eyebrow">西北太平洋 · 海气相互作用</div></div>
+    <div class="lang-block" lang="en" data-id="hero-eyebrow"><div class="eyebrow">North Pacific · Air–sea interaction</div></div>
+  </div>
+  <div class="pair">
+    <div class="lang-block" lang="zh-CN" data-id="hero-title"><h1>洋流锋面的南北摆动，<span class="keep">能否</span>重塑其上空的大气？</h1></div>
+    <div class="lang-block" lang="en" data-id="hero-title"><h1>Can meridional shifts of ocean fronts reorganize the atmosphere above?</h1></div>
+  </div>
+  <div class="pair">
+    <div class="lang-block hero-deck" lang="zh-CN" data-id="hero-deck">Frankignoul 等（2011）比较亲潮延伸体与黑潮延伸体的经向位移，尝试从观测资料中辨认滞后于海洋锋面变化的大尺度大气信号，并把 ENSO 遥相关从统计关系中剥离。<a class="cite" href="#src-s1">S1·摘要/§1</a></div>
+    <div class="lang-block hero-deck" lang="en" data-id="hero-deck">Frankignoul et al. (2011) compare latitude shifts of the Oyashio and Kuroshio Extensions, seeking large-scale atmospheric patterns that follow the ocean-front changes after statistically filtering ENSO teleconnections.<a class="cite" href="#src-s1">S1·Abstract/§1</a></div>
+  </div>
+  <div class="pill-row" aria-label="paper metadata summary">
+    <span class="pill">Journal of Climate · 24(3)</span><span class="pill">762–777</span><span class="pill">2011-02-01</span><span class="pill">DOI 10.1175/2010JCLI3731.1</span>
+  </div>
+  <div class="pair">
+    <div class="lang-block rights" lang="zh-CN" data-id="rights-notice"><span>版权受限学术导读，不是全文翻译。<br>本页只提供原创双语转述、方法审读与引文语境说明；不含<span class="keep">论文图件</span>，也不<span class="keep">逐句重构原文</span>。</span></div>
+    <div class="lang-block rights" lang="en" data-id="rights-notice"><span>Copyright-restricted scholarly guide—not a full-text translation. This page contains original bilingual paraphrase, methodological reading, and citation-context analysis; it reproduces neither the paper’s figures nor its prose sentence by sentence.</span></div>
+  </div>
+</section>
+
+<div class="layout">
+  <aside aria-label="目录"><nav class="toc" aria-label="目录 / Contents">
+    <div class="toc-title">Contents</div><a href="#orientation"><span lang="zh-CN">01 · 导读</span><span lang="en">01 · Orientation</span></a><a href="#abstract"><span lang="zh-CN">02 · 结构化摘要</span><span lang="en">02 · Abstract</span></a><a href="#data"><span lang="zh-CN">03 · 数据</span><span lang="en">03 · Data</span></a><a href="#methods"><span lang="zh-CN">04 · 方法</span><span lang="en">04 · Methods</span></a><a href="#walkthrough"><span lang="zh-CN">05 · 逐节解读</span><span lang="en">05 · Walkthrough</span></a><a href="#results"><span lang="zh-CN">06 · 结果</span><span lang="en">06 · Results</span></a><a href="#mechanisms"><span lang="zh-CN">07 · 机制</span><span lang="en">07 · Mechanism</span></a><a href="#boundaries"><span lang="zh-CN">08 · 边界</span><span lang="en">08 · Limits</span></a><a href="#citation"><span lang="zh-CN">09 · 引文关联</span><span lang="en">09 · Citation</span></a><a href="#sources"><span lang="zh-CN">10 · 来源</span><span lang="en">10 · Sources</span></a>
+  </nav></aside>
+
+  <main id="main">
+    <section class="section" id="orientation">
+      <div class="section-head"><span class="section-no">01</span><h2 class="pair"><span class="lang-block" lang="zh-CN" data-id="heading-orientation">导读定位</span><span class="lang-block" lang="en" data-id="heading-orientation">Orientation</span></h2></div>
+      <div class="pair card accent">
+        <div class="lang-block" lang="zh-CN" data-id="orientation-thesis"><div class="kicker">一句话结论</div><p class="lead">论文报告：亲潮延伸体经向位移之后出现的环流信号更强、更稳健，也更接近 NPO/WP 型；黑潮延伸体之后的信号更弱、位置更偏西，而且更容易受残余热带海温共变影响。</p><p>这是基于滞后协方差与回归的观测归因，不是受控实验。<a class="cite" href="#src-s1">S1·§5–6</a></p></div>
+        <div class="lang-block" lang="en" data-id="orientation-thesis"><div class="kicker">One-sentence reading</div><p class="lead">The reported circulation pattern following Oyashio Extension shifts is stronger, more robust, and more NPO/WP-like; the Kuroshio Extension signal is weaker, displaced westward, and more vulnerable to residual tropical-SST covariation.</p><p>This is an observational attribution built from lagged covariance and regression, not a controlled experiment.<a class="cite" href="#src-s1">S1·§5–6</a></p></div>
+      </div>
+      <div class="grid-2">
+        <div class="pair card soft">
+          <div class="lang-block" lang="zh-CN" data-id="orientation-question"><div class="kicker">研究问题</div><h3>慢变海洋，是否留下领先的大气印记？</h3><p>核心判别不是同时相关，而是当海洋锋面指数领先数月或数季时，大气高度场、海平面气压与 Ekman 抽吸是否呈现可重复的空间结构。</p></div>
+          <div class="lang-block" lang="en" data-id="orientation-question"><div class="kicker">Research question</div><h3>Does a slow ocean state leave a subsequent atmospheric imprint?</h3><p>The diagnostic is not simultaneous correlation. It asks whether height, sea-level pressure, and Ekman-pumping fields form reproducible patterns when an ocean-front index leads by months or seasons.</p></div>
+        </div>
+        <div class="pair card soft">
+          <div class="lang-block" lang="zh-CN" data-id="orientation-reading-lens"><div class="kicker">阅读透镜</div><h3>分清“形状可信”与“幅值可信”</h3><p>作者反复强调，空间型及其统计显著性相对稳健；响应幅值却高度依赖所选滞后与预设响应时间。读图时不应把一张回归图上的米数直接当作唯一物理灵敏度。</p></div>
+          <div class="lang-block" lang="en" data-id="orientation-reading-lens"><div class="kicker">Reading lens</div><h3>Separate confidence in pattern from confidence in amplitude</h3><p>The authors treat the spatial form and its significance as comparatively robust, while the inferred magnitude changes markedly with lag and assumed response time. A mapped height value is therefore not a unique physical sensitivity.</p></div>
+        </div>
+      </div>
+      <div class="pair card soft">
+        <div class="lang-block" lang="zh-CN" data-id="metadata-full"><div class="kicker">完整书目信息</div><p><strong>题名：</strong>Influence of the Meridional Shifts of the Kuroshio and the Oyashio Extensions on the Atmospheric Circulation<br><strong>作者：</strong>Claude Frankignoul；Nathalie Sennéchael；Young-Oh Kwon；Michael A. Alexander<br><strong>期刊：</strong><em>Journal of Climate</em>，24 卷 3 期，762–777 页；出版者 American Meteorological Society；2011-02-01；语言 EN；ISSN 0894-8755 / 1520-0442；DOI <a href="https://doi.org/10.1175/2010JCLI3731.1">10.1175/2010JCLI3731.1</a>。<a class="cite" href="#src-s2">S2·meta</a></p><p><strong>Paper ID：</strong><code>influence-of-the-meridional-shifts-of-the-kuroshio-and-the-oyashio-extensions-on-the-atmospheric-circulation-fc72376b</code></p></div>
+        <div class="lang-block" lang="en" data-id="metadata-full"><div class="kicker">Complete bibliographic record</div><p><strong>Title:</strong> Influence of the Meridional Shifts of the Kuroshio and the Oyashio Extensions on the Atmospheric Circulation<br><strong>Authors:</strong> Claude Frankignoul; Nathalie Sennéchael; Young-Oh Kwon; Michael A. Alexander<br><strong>Journal:</strong> <em>Journal of Climate</em>, vol. 24, no. 3, pp. 762–777; American Meteorological Society; 2011-02-01; language EN; ISSN 0894-8755 / 1520-0442; DOI <a href="https://doi.org/10.1175/2010JCLI3731.1">10.1175/2010JCLI3731.1</a>.<a class="cite" href="#src-s2">S2·meta</a></p><p><strong>Paper ID:</strong> <code>influence-of-the-meridional-shifts-of-the-kuroshio-and-the-oyashio-extensions-on-the-atmospheric-circulation-fc72376b</code></p></div>
+      </div>
+    </section>
+
+    <section class="section" id="abstract">
+      <div class="section-head"><span class="section-no">02</span><h2 class="pair"><span class="lang-block" lang="zh-CN" data-id="heading-abstract">原创结构化摘要</span><span class="lang-block" lang="en" data-id="heading-abstract">Original structured abstract</span></h2></div>
+      <div class="grid-2">
+        <div class="pair card">
+          <div class="lang-block" lang="zh-CN" data-id="abstract-objective"><div class="kicker">目的</div><p>检验西北太平洋两条相邻但结构不同的锋区发生南北移动后，北太平洋及远端大气环流是否出现可分辨响应，并比较两类响应的强度、垂直结构、季节性和反馈方向。</p></div>
+          <div class="lang-block" lang="en" data-id="abstract-objective"><div class="kicker">Objective</div><p>Test whether meridional movement of two neighboring yet physically distinct western North Pacific fronts precedes a detectable regional and remote circulation response, and compare its magnitude, vertical form, seasonality, and feedback sign.</p></div>
+        </div>
+        <div class="pair card">
+          <div class="lang-block" lang="zh-CN" data-id="abstract-design"><div class="kicker">设计</div><p>研究分别构造月度 OE 指数与低时间分辨率 KE 指数；先去趋势、再以随季节变化且区分正负位相的多元回归去除三个热带太平洋 SST 主成分，最后用海洋领先的大气—海洋滞后协方差估计响应。<a class="cite" href="#src-s1">S1·§3–4/附录</a></p></div>
+          <div class="lang-block" lang="en" data-id="abstract-design"><div class="kicker">Design</div><p>The study builds a monthly OE index and a lower-frequency KE index, detrends the fields, removes three tropical-Pacific SST PCs through seasonally varying sign-dependent multivariate regression, and estimates response from atmosphere–ocean covariance at ocean-leading lags.<a class="cite" href="#src-s1">S1·§3–4/App.</a></p></div>
+        </div>
+        <div class="pair card">
+          <div class="lang-block" lang="zh-CN" data-id="abstract-oe-result"><div class="kicker">OE 结果</div><p>OE 经向位移领先约 2–6 个月时，可见大尺度、近似正压等值的南北偶极环流型；秋冬最稳健，典型位移下 250 hPa 北侧中心约达 35 m。负位移样本信号似乎更强，但样本有限。<a class="cite" href="#src-s1">S1·§5a</a></p></div>
+          <div class="lang-block" lang="en" data-id="abstract-oe-result"><div class="kicker">OE result</div><p>At leads of roughly two to six months, OE displacement is followed by a broad, nearly equivalent-barotropic meridional dipole. The pattern is most robust in fall–winter; for a typical shift, the northern 250-hPa center is estimated near 35 m. Southward cases appear stronger, with limited samples.<a class="cite" href="#src-s1">S1·§5a</a></p></div>
+        </div>
+        <div class="pair card">
+          <div class="lang-block" lang="zh-CN" data-id="abstract-ke-result"><div class="kicker">KE 结果</div><p>KE 向北移动之后约两季，大气信号以西北太平洋上空高压异常为主，250 hPa 典型幅度约 15 m；相较 OE，它更弱、空间型不同，并可能夹带印度洋或赤道太平洋残余影响。<a class="cite" href="#src-s1">S1·§5b</a></p></div>
+          <div class="lang-block" lang="en" data-id="abstract-ke-result"><div class="kicker">KE result</div><p>About two seasons after a northward KE shift, the estimated atmosphere is dominated by a high over the northwestern North Pacific, with a typical 250-hPa magnitude near 15 m. It is weaker and spatially distinct from the OE case, and may retain Indian or equatorial Pacific contamination.<a class="cite" href="#src-s1">S1·§5b</a></p></div>
+        </div>
+      </div>
+      <div class="pair card soft">
+        <div class="lang-block" lang="zh-CN" data-id="abstract-interpretation"><div class="kicker">解释</div><p>研究最有说服力之处，是“相邻两条暖海温异常都能伴随不同的大气型”：这与单纯把结果归结为泛化的 KOE 暖异常不符。作者据此推测，OE 的锋生/风暴路径锚定与 KE 的宽广潜热释放可能是不同通道；但观测回归仍无法单独锁定这些过程。</p></div>
+        <div class="lang-block" lang="en" data-id="abstract-interpretation"><div class="kicker">Interpretation</div><p>The most informative contrast is that two nearby northward shifts—each associated with regional warming—lead to different atmospheric patterns. That is difficult to reduce to a generic warm KOE anomaly. The paper therefore proposes frontal storm-track anchoring for OE and broader latent-heat release for KE as distinct pathways, while acknowledging that regression alone does not isolate either process.</p></div>
+      </div>
+    </section>
+
+    <section class="section" id="data">
+      <div class="section-head"><span class="section-no">03</span><h2 class="pair"><span class="lang-block" lang="zh-CN" data-id="heading-data">数据与指标</span><span class="lang-block" lang="en" data-id="heading-data">Data and indices</span></h2></div>
+      <div class="grid-2">
+        <div class="pair card soft">
+          <div class="lang-block" lang="zh-CN" data-id="data-reanalysis"><span class="term">大气场</span><h3>NCEP–NCAR 再分析</h3><p>1980–2008 年月异常：海平面气压、250/500 hPa 位势高度、地表风应力与 SST。它提供完整大气场，却使用较粗海温边界，不能显式解析锋面的小尺度结构。<a class="cite" href="#src-s1">S1·§2/§6</a></p></div>
+          <div class="lang-block" lang="en" data-id="data-reanalysis"><span class="term">Atmosphere</span><h3>NCEP–NCAR reanalysis</h3><p>Monthly anomalies for 1980–2008: sea-level pressure, 250/500-hPa geopotential height, surface wind stress, and SST. It provides coherent atmospheric fields but uses an SST boundary too coarse to resolve fine frontal structure explicitly.<a class="cite" href="#src-s1">S1·§2/§6</a></p></div>
+        </div>
+        <div class="pair card soft">
+          <div class="lang-block" lang="zh-CN" data-id="data-oisst"><span class="term">OE</span><h3>NOAA OISST v2</h3><p>1982–2008 年、0.25° 分辨率的 AVHRR-only 月平均产品，用于逐经度寻找最大经向 SST 梯度，从而追踪浅而锋利的亲潮延伸体前缘。<a class="cite" href="#src-s1">S1·§2/§3a</a></p></div>
+          <div class="lang-block" lang="en" data-id="data-oisst"><span class="term">OE</span><h3>NOAA OISST v2</h3><p>The 0.25° AVHRR-only monthly product for 1982–2008 is searched at each longitude for the strongest meridional SST gradient, tracking the shallow, sharp Oyashio Extension front.<a class="cite" href="#src-s1">S1·§2/§3a</a></p></div>
+        </div>
+        <div class="pair card soft">
+          <div class="lang-block" lang="zh-CN" data-id="data-wod"><span class="term">KE</span><h3>WOD2005 与在线更新</h3><p>1979–2007 年历史温度剖面被客观分析到 200 m，随后追踪 142°–160°E 间 14°C 等温线的位置。原始资料稀疏且涡动噪声强，因此指标采用季节平均与约一年平滑。<a class="cite" href="#src-s1">S1·§2/§3b</a></p></div>
+          <div class="lang-block" lang="en" data-id="data-wod"><span class="term">KE</span><h3>WOD2005 plus online updates</h3><p>Historical profiles for 1979–2007 are objectively mapped at 200 m, then used to locate the 14°C isotherm from 142° to 160°E. Sparse sampling and eddy noise motivate seasonal averaging and approximately annual smoothing.<a class="cite" href="#src-s1">S1·§2/§3b</a></p></div>
+        </div>
+        <div class="pair card soft">
+          <div class="lang-block" lang="zh-CN" data-id="data-asymmetry"><span class="term">不对称设计</span><h3>两个指数并不等价</h3><p>OEI 具月分辨率且包含快速、慢速两部分；KEI 主要是低频信号。两者约同期相关仅 r=0.16，因此分开做单变量分析有统计依据，但也使“响应幅度一一比较”受到分辨率差异限制。<a class="cite" href="#src-s1">S1·§3c</a></p></div>
+          <div class="lang-block" lang="en" data-id="data-asymmetry"><span class="term">Asymmetric design</span><h3>The two indices are not equivalent measurements</h3><p>OEI is monthly and contains both fast and slow components; KEI is predominantly low-frequency. Their corresponding-time correlation is only r=0.16, supporting separate univariate analyses while limiting a direct amplitude comparison across unequal resolutions.<a class="cite" href="#src-s1">S1·§3c</a></p></div>
+        </div>
+      </div>
+      <div class="pair card">
+        <div class="lang-block" lang="zh-CN" data-id="data-glossary"><div class="kicker">最小术语表</div><p><strong>OE / 亲潮延伸体：</strong>约位于 35°–47°N 的强 SST 梯度锋；<strong>KE / 黑潮延伸体：</strong>更深、表面梯度较弱的喷流锋；<strong>NPO/WP：</strong>北太平洋海平面气压与高空环流的特征模态；<strong>等效正压：</strong>异常随高度基本同号、位置相近；<strong>Ekman pumping：</strong>风应力旋度驱动的垂直运动指标；<strong>ENSO：</strong>厄尔尼诺—南方涛动及其遥相关。</p></div>
+        <div class="lang-block" lang="en" data-id="data-glossary"><div class="kicker">Minimal glossary</div><p><strong>OE:</strong> a sharp SST-gradient front tracked between about 35° and 47°N; <strong>KE:</strong> a deeper jet front with a more modest surface gradient; <strong>NPO/WP:</strong> characteristic North Pacific sea-level-pressure/upper-air modes; <strong>equivalent barotropic:</strong> anomalies retaining broadly similar sign and position with height; <strong>Ekman pumping:</strong> a vertical-motion diagnostic derived from wind-stress curl; <strong>ENSO:</strong> El Niño–Southern Oscillation and its teleconnections.</p></div>
+      </div>
+    </section>
+
+    <section class="section" id="methods">
+      <div class="section-head"><span class="section-no">04</span><h2 class="pair"><span class="lang-block" lang="zh-CN" data-id="heading-methods">方法拆解</span><span class="lang-block" lang="en" data-id="heading-methods">Method, step by step</span></h2></div>
+      <div class="pair card soft">
+        <div class="lang-block" lang="zh-CN" data-id="method-oe-index"><div class="kicker">步骤 A · OEI</div><p>在 145°–170°E、35°–47°N 范围内逐月寻找最大 meridional SST gradient 的纬度；每个经度去线性趋势和季节循环后，对这些纬度做 EOF。第一主成分代表协调的南北摆动，未平滑资料中解释 13% 总方差；作者保留未平滑指数，以便探测数月尺度的大气滞后。<a class="cite" href="#src-s1">S1·§3a</a></p></div>
+        <div class="lang-block" lang="en" data-id="method-oe-index"><div class="kicker">Step A · OEI</div><p>For each month, locate the latitude of the maximum meridional SST gradient over 145°–170°E and from 35°N to 47°N. Remove longitude-specific linear trends and seasonal cycles, then apply EOF analysis. PC1 represents coherent north–south motion and explains 13% of unsmoothed variance; the unsmoothed index is retained to preserve monthly response information.<a class="cite" href="#src-s1">S1·§3a</a></p></div>
+      </div>
+      <div class="pair card soft">
+        <div class="lang-block" lang="zh-CN" data-id="method-ke-index"><div class="kicker">步骤 B · KEI</div><p>先以 500 km 去相关尺度和 10% 容许制图误差，客观分析 200 m 温度；再提取 14°C 等温线纬度，用五点三角滤波削弱短于一年变化，并对平滑后的季节资料做 EOF。第一模态解释 70% 方差，一个标准差约对应 30 km 位移。<a class="cite" href="#src-s1">S1·§3b</a></p></div>
+        <div class="lang-block" lang="en" data-id="method-ke-index"><div class="kicker">Step B · KEI</div><p>Objectively map 200-m temperature using a 500 km decorrelation scale and 10% mapping-error allowance; extract the latitude of the 14°C isotherm, suppress subannual variability with a five-point triangular filter, and perform EOF analysis on the smoothed seasonal record. PC1 explains 70% of variance, with one standard deviation corresponding to about 30 km.<a class="cite" href="#src-s1">S1·§3b</a></p></div>
+      </div>
+      <div class="pair card accent">
+        <div class="lang-block" lang="zh-CN" data-id="method-lag"><div class="kicker">步骤 C · 滞后响应框架</div><p>把大气量 X 看作“短记忆内部天气 n + 由慢变海洋指标 T 触发的线性响应”。当 T 足够领先时，n 与早先 T 的协方差应衰减，于是 X–T 的滞后协方差可用于估计响应系数。作者又引入特征延迟：OE 取 2 个月，KE 取 1 季。<a class="cite" href="#src-s1">S1·§4</a></p><p class="callout">识别逻辑成立的关键，是大气内部记忆显著短于海洋指标；若残余慢大气过程同时驱动两者，海洋领先并不自动等于海洋致因。</p></div>
+        <div class="lang-block" lang="en" data-id="method-lag"><div class="kicker">Step C · Lag-response framework</div><p>An atmospheric variable X is represented as rapidly decorrelating internal weather n plus a linear response to a slower ocean index T. Once T leads far enough for covariance between n and earlier T to fade, lagged X–T covariance estimates the response coefficient. A characteristic delay is imposed: two months for OE and one season for KE.<a class="cite" href="#src-s1">S1·§4</a></p><p class="callout">The identification hinges on atmospheric internal memory being much shorter than the ocean index. If an omitted slow atmospheric process drives both, an ocean-leading lag is not automatically ocean causation.</p></div>
+      </div>
+      <div class="grid-2">
+        <div class="pair card soft">
+          <div class="lang-block" lang="zh-CN" data-id="method-enso"><div class="kicker">步骤 D · ENSO 过滤</div><p>从热带太平洋 12.5°S–12.5°N 的月 SST 提取前三个 PC；对正、负 PC 分开拟合，以表示遥相关非对称；系数随历月变化，并用相邻三个月扩充每个历月样本。该信号同时从大气场和 WBC 指数中去除。<a class="cite" href="#src-s1">S1·附录</a></p></div>
+          <div class="lang-block" lang="en" data-id="method-enso"><div class="kicker">Step D · ENSO filtering</div><p>Extract the first three monthly SST PCs over 12.5°S–12.5°N in the tropical Pacific. Fit positive and negative PC values separately to represent asymmetric teleconnections; let coefficients vary by calendar month, pooling the adjacent three months. Remove this signal from both atmospheric fields and WBC indices.<a class="cite" href="#src-s1">S1·App.</a></p></div>
+        </div>
+        <div class="pair card soft">
+          <div class="lang-block" lang="zh-CN" data-id="method-trend"><div class="kicker">步骤 E · 超低频控制</div><p>所有变量先去三次多项式趋势，以降低趋势和超低频共变影响；改用二次趋势时，作者称结果相似。这是敏感性检查，但并不能证明低频气候变率已被完全正确建模。</p></div>
+          <div class="lang-block" lang="en" data-id="method-trend"><div class="kicker">Step E · Very-low-frequency control</div><p>A cubic polynomial is removed from every variable to reduce trend and ultralow-frequency covariance; the authors report broadly similar results with a quadratic trend. This is a sensitivity check, not proof that all low-frequency climate variability has been modeled correctly.</p></div>
+        </div>
+      </div>
+      <div class="pair card soft">
+        <div class="lang-block" lang="zh-CN" data-id="method-significance"><div class="kicker">步骤 F · 显著性</div><p>一条路径按序列持续性修正相关显著性；另一条用块自助法，将大气序列以 2 年块（OE）或 3 年块（KE）随机重排 500 次。图中采用后一结果；Ekman 抽吸因噪声较大用 10% 阈值，其余结果在 5% 阈值下大体相似。<a class="cite" href="#src-s1">S1·§4</a></p></div>
+        <div class="lang-block" lang="en" data-id="method-significance"><div class="kicker">Step F · Significance</div><p>One route adjusts correlation tests for time-series persistence. A second uses a block bootstrap, randomly permuting atmospheric records 500 times in two-year OE blocks or three-year KE blocks. Figures use the latter; noisy Ekman-pumping maps use a 10% threshold, with broadly similar findings at 5%.<a class="cite" href="#src-s1">S1·§4</a></p></div>
+      </div>
+    </section>
+
+    <section class="section" id="walkthrough">
+      <div class="section-head"><span class="section-no">05</span><h2 class="pair"><span class="lang-block" lang="zh-CN" data-id="heading-walkthrough">逐节详细解读</span><span class="lang-block" lang="en" data-id="heading-walkthrough">Section-by-section walkthrough</span></h2></div>
+      <div class="pair card soft">
+        <div class="lang-block" lang="zh-CN" data-id="walk-s1"><div class="kicker">§1 引言</div><p>论文把问题放在“风暴路径受中纬度 SST 锋锚定”与“中纬度海温强迫往往弱于内部天气噪声”的张力中。两条相邻锋面结构不同：KE 深、表面梯度较缓；OE 浅、表面梯度尖锐。由此提出关键比较——不是一般 KOE 暖异常是否相关，而是哪一条锋面的位移更能预示大尺度大气型。<a class="cite" href="#src-s1">S1·§1</a></p></div>
+        <div class="lang-block" lang="en" data-id="walk-s1"><div class="kicker">§1 Introduction</div><p>The paper frames a tension between frontal anchoring of storm tracks and the usual weakness of midlatitude SST forcing relative to internal weather noise. The neighboring fronts differ: KE is deep with a gentler surface gradient; OE is shallow with a sharp gradient. The comparison therefore asks which front’s displacement—not generic KOE warming—precedes a large-scale atmospheric pattern.<a class="cite" href="#src-s1">S1·§1</a></p></div>
+      </div>
+      <div class="pair card soft">
+        <div class="lang-block" lang="zh-CN" data-id="walk-s2"><div class="kicker">§2 数据</div><p>大气与表面海温来自再分析，OE 位置由高分辨率卫星 SST 确定，KE 位置则依赖历史温度剖面。这样的拼接让研究得以比较两个锋面，却引入结构性不对称：OE 观测更密、更快；KE 更稀、更平滑。作者也清楚指出，再分析所用 SST 太粗，可能低估或错误表达锋面强迫。</p></div>
+        <div class="lang-block" lang="en" data-id="walk-s2"><div class="kicker">§2 Data</div><p>Atmosphere and broad SST fields come from reanalysis, OE position from high-resolution satellite SST, and KE position from historical temperature profiles. This enables a comparison but creates structural asymmetry: OE is observed more densely and rapidly, whereas KE is sparse and smoothed. The paper explicitly notes that reanalysis SST is too coarse to represent frontal forcing faithfully.</p></div>
+      </div>
+      <div class="pair card soft">
+        <div class="lang-block" lang="zh-CN" data-id="walk-s3a"><div class="kicker">§3a OE 指数</div><p>OEI 的第一 EOF 方差占比不高，却表现为空间协调的南北移。其快速部分被解释为近乎正压的海洋调整，较慢部分与斜压 Rossby 波有关；OEI 自相关在一个月即显著下降，之后仍以约 3–4 个月 e-folding 衰减。这种“双时间尺度”直接影响响应系数分母和幅值。<a class="cite" href="#src-s1">S1·§3a/§4</a></p></div>
+        <div class="lang-block" lang="en" data-id="walk-s3a"><div class="kicker">§3a OE index</div><p>OEI PC1 explains a modest share of total variance but depicts coherent meridional displacement. Fast behavior is linked to near-barotropic ocean adjustment, slower behavior to baroclinic Rossby waves; autocorrelation drops sharply after one month, then decays with an approximately three-to-four-month e-folding time. This dual timescale directly affects the response denominator and inferred magnitude.<a class="cite" href="#src-s1">S1·§3a/§4</a></p></div>
+      </div>
+      <div class="pair card soft">
+        <div class="lang-block" lang="zh-CN" data-id="walk-s3b"><div class="kicker">§3b KE 指数</div><p>KEI 描述 200 m 等温线的整体经向位移，第一 EOF 占比高，但这是在强平滑后得到的低频指标。与卫星高度计 KE 指数仅中等相关（r=0.52），说明它可能只捕捉到喷流位置的一部分。风应力旋度的提前关系及 Rossby 波模型相关（r=0.60）支持其以斜压、盆地尺度风强迫为主。<a class="cite" href="#src-s1">S1·§3b</a></p></div>
+        <div class="lang-block" lang="en" data-id="walk-s3b"><div class="kicker">§3b KE index</div><p>KEI depicts coherent displacement of a 200-m isotherm and has a high leading-EOF share, but only after strong smoothing into a low-frequency index. Its moderate correlation (r=0.52) with an altimetric KE index suggests partial representation of jet position. Wind-stress-curl leads and a Rossby-wave hindcast correlation of r=0.60 support predominantly baroclinic, basin-scale wind forcing.<a class="cite" href="#src-s1">S1·§3b</a></p></div>
+      </div>
+      <div class="pair card soft">
+        <div class="lang-block" lang="zh-CN" data-id="walk-s3c"><div class="kicker">§3c 两指数关系</div><p>OEI 与相同平滑尺度下的 KEI 几乎不相关，尽管二者都与 PDO 或区域 SST 有联系。作者据此分别估计大气响应。这避免了强共线性，却没有解决它们各自与盆地尺度 SST、热通量或其他慢变量共变的问题。</p></div>
+        <div class="lang-block" lang="en" data-id="walk-s3c"><div class="kicker">§3c Relation between indices</div><p>OEI and equivalently smoothed KEI are nearly uncorrelated even though both covary with PDO or regional SST. The authors therefore estimate responses separately. This avoids strong collinearity but does not remove covariance with basin-scale SST, surface heat fluxes, or other slow variables.</p></div>
+      </div>
+      <div class="pair card soft">
+        <div class="lang-block" lang="zh-CN" data-id="walk-s4"><div class="kicker">§4 响应估计</div><p>这一节建立全文识别策略：避开大气领先或零滞后关系，因为那些主要记录“天气驱动海洋”；转而查看海洋领先且超过短期天气记忆的协方差。随后加入有限建立时间、ENSO 滤除、趋势控制与自助显著性。其优势是方向性清楚；代价是响应时间 d 与慢/快方差拆分并非由资料唯一决定。</p></div>
+        <div class="lang-block" lang="en" data-id="walk-s4"><div class="kicker">§4 Estimating response</div><p>This section supplies the identification strategy: avoid atmosphere-leading and zero-lag relations, which mostly record weather forcing the ocean, and examine ocean-leading covariance beyond short weather memory. Response-development time, ENSO removal, trend control, and bootstrap significance are then added. Directionality is explicit, but delay d and the fast/slow variance split are not uniquely determined by the data.</p></div>
+      </div>
+      <div class="pair card soft">
+        <div class="lang-block" lang="zh-CN" data-id="walk-s5a"><div class="kicker">§5a OE 响应</div><p>OE 结果的核心不是一个局地边界层信号，而是贯穿海平面到 250 hPa 的盆地尺度偶极，并延伸到北美东北部和西欧。它在秋冬、更长于一个月的海洋领先滞后以及向南位移样本中更突出。Ekman 抽吸响应与此前驱动 OE 的型有部分相似，因此作者提出弱正反馈。</p></div>
+        <div class="lang-block" lang="en" data-id="walk-s5a"><div class="kicker">§5a OE response</div><p>The central OE result is not merely a local boundary-layer feature: it is a basin-scale dipole spanning sea level to 250 hPa, with extensions toward northeastern North America and western Europe. It is clearest in fall–winter, at ocean-leading lags beyond one month, and in southward-shift cases. Similarity between responding and previously forcing Ekman-pumping patterns motivates a weak positive-feedback interpretation.</p></div>
+      </div>
+      <div class="pair card soft">
+        <div class="lang-block" lang="zh-CN" data-id="walk-s5b"><div class="kicker">§5b KE 响应</div><p>KEI 在 ENSO 滤除后标准差下降 23%，说明热带共变原本相当强。平滑后的大气场在 KE 领先两季时出现西北太平洋高压异常，垂直结构大体正压，但堪察加附近有向西倾斜。残余印度洋与东赤道太平洋 SST 让这一响应的归因弱于 OE。</p></div>
+        <div class="lang-block" lang="en" data-id="walk-s5b"><div class="kicker">§5b KE response</div><p>KEI standard deviation falls by 23% after ENSO filtering, showing substantial prior tropical covariance. Smoothed atmospheric fields at a two-season KE lead show a northwestern Pacific high; the structure is broadly barotropic but tilts westward near Kamchatka. Residual Indian and eastern-equatorial Pacific SST makes attribution weaker than for OE.</p></div>
+      </div>
+      <div class="pair card soft">
+        <div class="lang-block" lang="zh-CN" data-id="walk-s6"><div class="kicker">§6 总结与讨论</div><p>作者把 OE–KE 差异解释为不同物理过程的候选证据：尖锐 OE 锋可能通过维持低层斜压性来锚定风暴路径；较宽广的 KE 海温变化可能更多经潜热释放影响大气。末节同时列出高分辨率再分析、改进 KE 指数、控制共变 SST 与更真实瞬变响应模型等后续需求。</p></div>
+        <div class="lang-block" lang="en" data-id="walk-s6"><div class="kicker">§6 Summary and discussion</div><p>The authors read the OE–KE contrast as candidate evidence for different physics: a sharp OE front may anchor storm development by maintaining low-level baroclinicity, whereas broader KE SST variability may act more through latent-heat release. The section also calls for higher-resolution reanalysis, a better KE index, separation from covarying SST, and a more realistic transient-response model.</p></div>
+      </div>
+      <div class="pair card soft">
+        <div class="lang-block" lang="zh-CN" data-id="walk-appendix"><div class="kicker">附录 · 去除 ENSO</div><p>附录说明前三个 ENSO PC 分别覆盖主要 ENSO、东西向 SST 对比及事件末期的窄赤道结构。三 PC 比单一 Niño-3.4 型指数更能削弱热带残差；但作者明确承认，这一操作旨在剥离即时遥相关，并不能把 WBC 对长期热带强迫的海洋积分响应与中纬度强迫分开。<a class="cite" href="#src-s1">S1·附录</a></p></div>
+        <div class="lang-block" lang="en" data-id="walk-appendix"><div class="kicker">Appendix · Removing ENSO</div><p>The first three ENSO PCs represent the leading event, the tropical east–west SST contrast, and a narrow equatorial pattern important near event termination. Three PCs suppress tropical residuals better than a Niño-3.4-like index alone. The authors stress, however, that this removes immediate teleconnections; it cannot separate the WBC’s integrated ocean response to tropical forcing from extratropical forcing.<a class="cite" href="#src-s1">S1·App.</a></p></div>
+      </div>
+    </section>
+
+    <section class="section" id="results">
+      <div class="section-head"><span class="section-no">06</span><h2 class="pair"><span class="lang-block" lang="zh-CN" data-id="heading-results">主要结果</span><span class="lang-block" lang="en" data-id="heading-results">Main results</span></h2></div>
+      <div class="compare">
+        <div class="pair card oe">
+          <div class="lang-block" lang="zh-CN" data-id="result-oe"><div class="kicker">OE · 更强</div><div class="stat">≈35 m <small>@ 250 hPa</small></div><ul><li>海洋领先约 2–6 个月时显著；</li><li>北太平洋南北偶极，近似等效正压；</li><li>秋冬最稳健，可解释阿留申低压区最高约 10% 月方差；</li><li>250 hPa 北叶约 35 m，南叶约 25 m；幅值依赖滞后。</li></ul><a class="cite" href="#src-s1">S1·§5a/§6</a></div>
+          <div class="lang-block" lang="en" data-id="result-oe"><div class="kicker">OE · Stronger</div><div class="stat">≈35 m <small>@ 250 hPa</small></div><ul><li>Significant at ocean leads of about two to six months;</li><li>meridional North Pacific dipole, nearly equivalent barotropic;</li><li>most robust in fall–winter, explaining up to about 10% of monthly Aleutian-low-region variance;</li><li>roughly 35 m in the northern 250-hPa lobe and 25 m in the southern, with lag-sensitive amplitude.</li></ul><a class="cite" href="#src-s1">S1·§5a/§6</a></div>
+        </div>
+        <div class="pair card ke">
+          <div class="lang-block" lang="zh-CN" data-id="result-ke"><div class="kicker">KE · 更弱</div><div class="stat">≈15 m <small>@ 250 hPa</small></div><ul><li>主要以 KE 领先两季估计；</li><li>西北太平洋高压、KOE 区弱低压；</li><li>大体等效正压，堪察加附近略呈斜压倾斜；</li><li>典型幅值至少比 OE 小一半，并有残余热带污染疑虑。</li></ul><a class="cite" href="#src-s1">S1·§5b/§6</a></div>
+          <div class="lang-block" lang="en" data-id="result-ke"><div class="kicker">KE · Weaker</div><div class="stat">≈15 m <small>@ 250 hPa</small></div><ul><li>Estimated mainly at a two-season KE lead;</li><li>a high over the northwestern Pacific and weak low over KOE;</li><li>mostly equivalent barotropic, with modest baroclinic tilt near Kamchatka;</li><li>typical magnitude at least two times weaker than OE, with residual tropical-contamination concerns.</li></ul><a class="cite" href="#src-s1">S1·§5b/§6</a></div>
+        </div>
+      </div>
+      <div class="grid-2">
+        <div class="pair card soft">
+          <div class="lang-block" lang="zh-CN" data-id="result-asymmetry"><div class="kicker">非线性线索</div><p>OE 向南位移时 250 hPa 与海平面气压响应似乎更强、更显著。该极性不对称与瞬变涡—平均流相互作用的理论预期相容，但分组后样本更少，不能当作稳定定律。</p></div>
+          <div class="lang-block" lang="en" data-id="result-asymmetry"><div class="kicker">Hint of nonlinearity</div><p>The 250-hPa and sea-level-pressure responses appear stronger and more significant for southward OE displacement. This polarity dependence is physically compatible with transient-eddy/mean-flow interaction, but sample subdivision is small and cannot establish a stable law.</p></div>
+        </div>
+        <div class="pair card soft">
+          <div class="lang-block" lang="zh-CN" data-id="result-predictability"><div class="kicker">可预报性线索</div><p>夏末至秋季的 OEI 对随后秋冬环流或有数月预测价值；但“解释最高 10% 方差”是样本内回归结果，不等于已通过独立留出样本或业务系统检验的预报技能。</p></div>
+          <div class="lang-block" lang="en" data-id="result-predictability"><div class="kicker">Predictability hint</div><p>Late-summer to autumn OEI may carry information about circulation a few months later. But “up to 10% explained variance” is an in-sample regression statement, not forecast skill validated on independent holdout data or in an operational system.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="mechanisms">
+      <div class="section-head"><span class="section-no">07</span><h2 class="pair"><span class="lang-block" lang="zh-CN" data-id="heading-mechanism">机制链</span><span class="lang-block" lang="en" data-id="heading-mechanism">Mechanism chains</span></h2></div>
+      <div class="pair">
+        <div class="lang-block" lang="zh-CN" data-id="mechanism-oe-heading"><h3>OE 候选链：锋面位移 → 风暴路径调整 → 盆地尺度环流</h3></div>
+        <div class="lang-block" lang="en" data-id="mechanism-oe-heading"><h3>Candidate OE chain: front shift → storm-track adjustment → basin-scale circulation</h3></div>
+      </div>
+      <div class="flow">
+        <div class="pair"><div class="lang-block card soft" lang="zh-CN" data-id="mechanism-oe-1"><h3>尖锐锋面南北移</h3><p>OE 的强 SST 梯度与伴随热异常改变低层水平温度梯度。</p></div><div class="lang-block card soft" lang="en" data-id="mechanism-oe-1"><h3>Sharp front moves</h3><p>OE’s strong SST gradient and associated thermal anomaly alter low-level horizontal temperature contrast.</p></div></div>
+        <div class="pair"><div class="lang-block card soft" lang="zh-CN" data-id="mechanism-oe-2"><h3>斜压性与涡活动调整</h3><p>锋区可能重新锚定风暴生成和瞬变涡动量/热量通量。</p></div><div class="lang-block card soft" lang="en" data-id="mechanism-oe-2"><h3>Baroclinicity and eddies adjust</h3><p>The front may reposition storm development and transient-eddy momentum and heat fluxes.</p></div></div>
+        <div class="pair"><div class="lang-block card soft" lang="zh-CN" data-id="mechanism-oe-3"><h3>平均流放大</h3><p>涡—平均流作用把初始低层热力响应转化为更深厚的大气异常。</p></div><div class="lang-block card soft" lang="en" data-id="mechanism-oe-3"><h3>Mean flow amplifies</h3><p>Eddy–mean-flow interaction can convert an initial low-level thermal response into a deeper anomaly.</p></div></div>
+        <div class="pair"><div class="lang-block card soft" lang="zh-CN" data-id="mechanism-oe-4"><h3>NPO/WP 型偶极</h3><p>数月后形成等效正压偶极，并可能经风应力旋度弱正反馈到 OE。</p></div><div class="lang-block card soft" lang="en" data-id="mechanism-oe-4"><h3>NPO/WP-like dipole</h3><p>A deep dipole emerges after several months and may weakly feed back onto OE through wind-stress curl.</p></div></div>
+      </div>
+      <div class="pair" style="margin-top:2.2rem">
+        <div class="lang-block" lang="zh-CN" data-id="mechanism-ke-heading"><h3>KE 候选链：深层喷流位移 → 宽广 SST/热通量 → 较弱大气响应</h3></div>
+        <div class="lang-block" lang="en" data-id="mechanism-ke-heading"><h3>Candidate KE chain: deep-jet shift → broad SST/heat flux → weaker atmospheric response</h3></div>
+      </div>
+      <div class="flow">
+        <div class="pair"><div class="lang-block card soft" lang="zh-CN" data-id="mechanism-ke-1"><h3>低频 KE 位移</h3><p>盆地风强迫与斜压 Rossby 波调整改变 200 m 等温线位置。</p></div><div class="lang-block card soft" lang="en" data-id="mechanism-ke-1"><h3>Low-frequency KE shift</h3><p>Basin-scale wind forcing and baroclinic Rossby-wave adjustment displace the 200-m isotherm.</p></div></div>
+        <div class="pair"><div class="lang-block card soft" lang="zh-CN" data-id="mechanism-ke-2"><h3>较宽海温异常</h3><p>位移伴随较广、但相对较弱的表面温度与热通量变化。</p></div><div class="lang-block card soft" lang="en" data-id="mechanism-ke-2"><h3>Broader SST anomaly</h3><p>Displacement accompanies a broad but comparatively weaker surface-temperature and heat-flux signal.</p></div></div>
+        <div class="pair"><div class="lang-block card soft" lang="zh-CN" data-id="mechanism-ke-3"><h3>潜热通道候选</h3><p>作者推测大尺度潜热释放而非锋面锚定更重要；资料并未直接分解热收支。</p></div><div class="lang-block card soft" lang="en" data-id="mechanism-ke-3"><h3>Candidate latent-heat route</h3><p>The paper proposes broad latent-heat release over frontal anchoring, but does not directly partition the heat budget.</p></div></div>
+        <div class="pair"><div class="lang-block card soft" lang="zh-CN" data-id="mechanism-ke-4"><h3>西北太平洋高压</h3><p>约一至两季后出现较弱高压异常；Ekman 响应可能构成延迟负反馈。</p></div><div class="lang-block card soft" lang="en" data-id="mechanism-ke-4"><h3>Northwestern Pacific high</h3><p>A weaker high appears after roughly one to two seasons; the Ekman response may provide delayed negative feedback.</p></div></div>
+      </div>
+      <div class="pair card soft">
+        <div class="lang-block" lang="zh-CN" data-id="mechanism-status"><p class="callout"><strong>机制证据等级：</strong>这些链条由时空型、垂直结构和既有物理理论共同支持，但论文没有直接观测瞬变涡反馈或表面热通量收支。应称“与机制相容”，不应称“机制已证实”。</p></div>
+        <div class="lang-block" lang="en" data-id="mechanism-status"><p class="callout"><strong>Mechanism evidence level:</strong> These chains are supported jointly by spatial/vertical patterns and prior physical theory, but the paper does not directly observe transient-eddy feedback or close a surface heat budget. Say “mechanistically consistent,” not “mechanism proven.”</p></div>
+      </div>
+    </section>
+
+    <section class="section" id="boundaries">
+      <div class="section-head"><span class="section-no">08</span><h2 class="pair"><span class="lang-block" lang="zh-CN" data-id="heading-limits">统计、因果边界与局限</span><span class="lang-block" lang="en" data-id="heading-limits">Statistical and causal boundaries</span></h2></div>
+      <div class="grid-2">
+        <div class="pair card soft">
+          <div class="lang-block" lang="zh-CN" data-id="boundary-direction"><div class="kicker">方向性</div><p><strong>能说：</strong>海洋指数领先后出现稳健大气型，且零/负滞后图型不同。<br><strong>不能说：</strong>仅凭领先关系就排除共同驱动、延迟遥相关或筛选滞后的多重比较风险。</p></div>
+          <div class="lang-block" lang="en" data-id="boundary-direction"><div class="kicker">Directionality</div><p><strong>Supported:</strong> a robust atmospheric pattern follows the ocean index and differs from zero/atmosphere-leading patterns.<br><strong>Not established:</strong> that temporal ordering alone eliminates common drivers, delayed teleconnections, or lag-selection multiplicity.</p></div>
+        </div>
+        <div class="pair card soft">
+          <div class="lang-block" lang="zh-CN" data-id="boundary-amplitude"><div class="kicker">幅值</div><p>OE 的 250 hPa 估计对滞后非常敏感：作者举例指出，选 lag 2、3、5 或改变响应延迟可让幅值成倍变化。因此 35 m 应读为一个设定下的典型估计，不是紧置信界。</p></div>
+          <div class="lang-block" lang="en" data-id="boundary-amplitude"><div class="kicker">Amplitude</div><p>OE 250-hPa magnitude is highly lag-sensitive: the paper shows that lag 2, 3, or 5 and a changed development delay can alter amplitude by factors. Read 35 m as a typical estimate under one setup, not as a tight uncertainty bound.</p></div>
+        </div>
+        <div class="pair card soft">
+          <div class="lang-block" lang="zh-CN" data-id="boundary-enso"><div class="kicker">ENSO</div><p>三 PC、季节变化、正负分开是一项强控制，但它依赖回归可加性及遥相关近乎同步的近似。KEI 的慢时间尺度尤其可能保留“热带强迫→海洋积分→KE”的路径，无法被简单去回归完全分离。</p></div>
+          <div class="lang-block" lang="en" data-id="boundary-enso"><div class="kicker">ENSO</div><p>Three PCs with season- and sign-dependent regressions are an unusually careful control, yet rely on approximate additivity and near-concurrent teleconnections. Slow KEI may retain a tropical-forcing → ocean-integration → KE pathway that simple residualization cannot fully separate.</p></div>
+        </div>
+        <div class="pair card soft">
+          <div class="lang-block" lang="zh-CN" data-id="boundary-resolution"><div class="kicker">分辨率</div><p>用于诊断响应的再分析由粗分辨率 SST 驱动，实际尖锐锋面不在其边界条件中。资料同化或可把大尺度信号“拉回”现实，但这是希望而非验证；高分辨率再分析或受控模式试验更适合检验。</p></div>
+          <div class="lang-block" lang="en" data-id="boundary-resolution"><div class="kicker">Resolution</div><p>The response fields come from a reanalysis driven by coarse SST, so the sharp real-world fronts are absent from its lower boundary. Data assimilation may nudge the large-scale state toward reality, but that is an expectation, not a validation; higher-resolution reanalysis or controlled model experiments are better tests.</p></div>
+        </div>
+        <div class="pair card soft">
+          <div class="lang-block" lang="zh-CN" data-id="boundary-index"><div class="kicker">指标测量误差</div><p>OE EOF 仅解释未平滑纬度方差的 13%；KE 指标又因资料稀疏而高度平滑，且与高度计指标 r=0.52。两类误差可能衰减、扭曲或改变滞后响应，不能把指数视作锋面“真实位置”的无误差观测。</p></div>
+          <div class="lang-block" lang="en" data-id="boundary-index"><div class="kicker">Index measurement error</div><p>OE PC1 explains only 13% of unsmoothed latitude variance; KE is heavily smoothed because sampling is sparse and correlates r=0.52 with an altimetric index. These errors can attenuate, distort, or retime responses; neither index is an error-free observation of “true” front position.</p></div>
+        </div>
+        <div class="pair card soft">
+          <div class="lang-block" lang="zh-CN" data-id="boundary-sample"><div class="kicker">样本与多重检验</div><p>记录约三十年，季节分层、正负位相分组后有效样本更少；时间持续性也降低自由度。块自助法处理自相关，但无法自动修正所有跨变量、跨高度、跨网格、跨滞后的探索性选择。</p></div>
+          <div class="lang-block" lang="en" data-id="boundary-sample"><div class="kicker">Sample and multiplicity</div><p>The record spans roughly three decades, and seasonal or polarity splits reduce effective sample size further; persistence also reduces degrees of freedom. Block bootstrapping addresses autocorrelation but does not automatically correct every exploratory choice across variables, levels, grid points, and lags.</p></div>
+        </div>
+        <div class="pair card soft">
+          <div class="lang-block" lang="zh-CN" data-id="boundary-confounding"><div class="kicker">空间共变</div><p>单变量回归不能区分局地锋面位移与同时共变的盆地尺度 SST、表面通量或其他海洋状态。OE–KE 低相关并不等于各自与全部潜在混杂变量独立。</p></div>
+          <div class="lang-block" lang="en" data-id="boundary-confounding"><div class="kicker">Spatial covariation</div><p>Univariate regression cannot separate local front displacement from covarying basin-scale SST, surface fluxes, or other ocean states. Low OE–KE correlation does not imply independence from all potential confounders.</p></div>
+        </div>
+        <div class="pair card soft">
+          <div class="lang-block" lang="zh-CN" data-id="boundary-generality"><div class="kicker">可推广性</div><p>结论针对特定年代、西北太平洋与所选指数定义。气候背景态、观测系统和锋面结构随时间改变，不能无检验外推到未来气候、每日天气或其他西边界流。</p></div>
+          <div class="lang-block" lang="en" data-id="boundary-generality"><div class="kicker">Generality</div><p>The conclusions concern a specific period, western North Pacific setting, and index definitions. Climate background, observing systems, and frontal structure change; extrapolation to future climate, daily weather, or other western boundary currents requires new tests.</p></div>
+        </div>
+      </div>
+      <div class="pair card">
+        <div class="lang-block" lang="zh-CN" data-id="boundary-causal-verdict"><p class="callout warning"><strong>因果判词：</strong>论文提供“与海洋锋面影响大气相容、且时间方向支持该解释”的观测证据；它削弱了纯同时相关的反向因果问题，却没有达到随机干预或完备结构因果识别的标准。</p></div>
+        <div class="lang-block" lang="en" data-id="boundary-causal-verdict"><p class="callout warning"><strong>Causal verdict:</strong> The paper provides observational evidence consistent with ocean-front influence on the atmosphere, with temporal direction supporting that reading. It reduces the reverse-causality problem of simultaneous correlation but does not reach randomized intervention or fully specified structural causal identification.</p></div>
+      </div>
+    </section>
+
+    <section class="section" id="citation">
+      <div class="section-head"><span class="section-no">09</span><h2 class="pair"><span class="lang-block" lang="zh-CN" data-id="heading-citation">与引用句的关联</span><span class="lang-block" lang="en" data-id="heading-citation">Relation to the citing statement</span></h2></div>
+      <div class="pair card accent">
+        <div class="lang-block" lang="zh-CN" data-id="citation-context"><div class="kicker">上游命题（原创转述）</div><p class="lead">2016 年 Nature 论文在正文末段把本研究列为引文 5，并与引文 6、13 并列，用来支持一项审慎的背景判断：黑潮延伸体锋附近的强 SST 梯度和涡旋引起的中尺度 SST 变率能够影响太平洋风暴轴。<a class="cite" href="#src-u1">U1·正文末段·引文 5</a></p></div>
+        <div class="lang-block" lang="en" data-id="citation-context"><div class="kicker">Upstream claim (original paraphrase)</div><p class="lead">Near the end of the 2016 Nature article, this study appears as reference 5 alongside references 6 and 13 to support a cautious background claim: the sharp SST gradient and eddy-induced mesoscale SST variability along the Kuroshio Extension Front can influence the Pacific storm track.<a class="cite" href="#src-u1">U1·final main-text section·ref. 5</a></p></div>
+      </div>
+      <div class="grid-2">
+        <div class="pair card soft">
+          <div class="lang-block" lang="zh-CN" data-id="citation-fit"><div class="kicker">为什么匹配</div><p>本论文直接构造 OE/KE 经向位移指数，并发现其后出现大尺度对流层环流型；OE 结果尤其呈秋冬 NPO/WP 样结构，作者把它解释为锋面锚定风暴路径的可能表现。因此它确实支持上游句中的“front shifts → atmospheric storm-track/circulation change”部分。</p></div>
+          <div class="lang-block" lang="en" data-id="citation-fit"><div class="kicker">Why it fits</div><p>The paper explicitly constructs OE/KE displacement indices and finds subsequent large-scale tropospheric patterns. The fall–winter NPO/WP-like OE result is interpreted as a possible manifestation of frontal anchoring of storm development. It therefore supports the citing statement’s front-shift → storm-track/circulation-change link.</p></div>
+        </div>
+        <div class="pair card soft">
+          <div class="lang-block" lang="zh-CN" data-id="citation-boundary"><div class="kicker">支持到哪里为止</div><p>它并未把风暴轴统计量作为主要响应变量，也没有操控锋面或闭合涡旋—大气反馈机制；KE 结果还可能受残余热带 SST 污染。因此该引文适合作为“锋面位置变化可影响大气环流”的观测依据，但不能单独证明涡旋引起的中尺度 SST 变率必然改变风暴轴，也不能直接检验 Nature 论文关于局地海洋中尺度涡旋—大气反馈调节黑潮延伸体动力学的核心机制。</p></div>
+          <div class="lang-block" lang="en" data-id="citation-boundary"><div class="kicker">Where support ends</div><p>Storm-track statistics are not the paper’s primary response variable, no front is experimentally manipulated, and the eddy–atmosphere feedback loop is not closed; the KE result may also retain tropical SST contamination. The citation is appropriate as observational support that frontal-position changes can influence atmospheric circulation, but it cannot alone show that eddy-induced mesoscale SST variability must alter the storm track or directly test the Nature paper’s core mechanism in which local ocean-mesoscale-eddy–atmosphere feedback regulates Kuroshio Extension dynamics.</p></div>
+        </div>
+      </div>
+      <div class="pair card soft">
+        <div class="lang-block" lang="zh-CN" data-id="citation-numbering"><div class="kicker">编号说明</div><p>本论文在用户指定的 Nature 论文中确为参考文献 5。该身份由 Nature 论文 DOI 10.1038/nature18640 的 Crossref 参考文献数组第 5 项与用户提供页面中的引文语境交叉核对。<a class="cite" href="#src-u1">U1·引文 5</a></p></div>
+        <div class="lang-block" lang="en" data-id="citation-numbering"><div class="kicker">Numbering note</div><p>This paper is reference 5 in the user-specified Nature article. Its identity was cross-checked against item 5 of the Crossref reference array for DOI 10.1038/nature18640 and the citation context on the supplied page.<a class="cite" href="#src-u1">U1·ref. 5</a></p></div>
+      </div>
+      <div class="pair card">
+        <div class="lang-block" lang="zh-CN" data-id="citation-reader-check"><div class="kicker">读者核对清单</div><ul><li>把“滞后回归”读作方向性证据，不读作随机实验；</li><li>把 OE 与 KE 分开，因为指标分辨率、海洋调整与候选机制不同；</li><li>引用数值时同时写明高度、滞后与幅值敏感性；</li><li>转述机制时使用“相容”“提示”“推测”，不要写成“证明”；</li><li>若主张业务可预报性，必须另找独立样本验证。</li></ul></div>
+        <div class="lang-block" lang="en" data-id="citation-reader-check"><div class="kicker">Reader checklist</div><ul><li>Read lagged regression as directional evidence, not randomization;</li><li>keep OE and KE separate because resolution, ocean adjustment, and proposed physics differ;</li><li>when quoting a magnitude, state height, lag, and amplitude sensitivity;</li><li>use “consistent with,” “suggests,” or “proposes” for mechanisms, not “proves”;</li><li>require independent validation for any operational forecast-skill claim.</li></ul></div>
+      </div>
+    </section>
+
+    <section class="section" id="sources">
+      <div class="section-head"><span class="section-no">10</span><h2 class="pair"><span class="lang-block" lang="zh-CN" data-id="heading-sources">来源、版权与核验</span><span class="lang-block" lang="en" data-id="heading-sources">Sources, rights, and verification</span></h2></div>
+      <div class="pair card soft">
+        <div class="lang-block" lang="zh-CN" data-id="source-method"><p>正文事实与数值均依照目标论文的出版者页面快照定位，并以章节号标注；上游引文语境来自用户指定的 2016 年 Nature 论文页面及其 Crossref 参考文献记录。英文与中文均为本导读的重新组织与原创转述。未将论文原摘要、正文段落、公式图、表格、图题或图像嵌入本页。</p></div>
+        <div class="lang-block" lang="en" data-id="source-method"><p>Factual and quantitative claims are located to a publisher-page snapshot of the target article; citation context comes from the user-specified 2016 Nature article page and its Crossref reference record. Both languages are newly organized paraphrases. No source abstract, body paragraph, equation image, table, caption, or figure is embedded here.</p></div>
+      </div>
+      <ol class="source-list card" aria-label="Source registry">
+        <li id="src-s1"><div class="pair"><div class="lang-block" lang="zh-CN" data-id="source-s1"><span class="source-id">S1</span><a href="https://doi.org/10.1175/2010JCLI3731.1">Frankignoul 等（2011），Journal of Climate，DOI 10.1175/2010JCLI3731.1</a><div class="source-note">目标学术来源。本导读定位到论文摘要、§§1–6 与附录；出版者为 American Meteorological Society。</div></div><div class="lang-block" lang="en" data-id="source-s1"><span class="source-id">S1</span><a href="https://doi.org/10.1175/2010JCLI3731.1">Frankignoul et al. (2011), Journal of Climate, DOI 10.1175/2010JCLI3731.1</a><div class="source-note">Primary scholarly source. Locators refer to the Abstract, §§1–6, and Appendix. Publisher: American Meteorological Society.</div></div></div></li>
+        <li id="src-s2"><div class="pair"><div class="lang-block" lang="zh-CN" data-id="source-s2"><span class="source-id">S2</span><a href="https://web.archive.org/web/20260214140759/https://journals.ametsoc.org/view/journals/clim/24/3/2010jcli3731.1.xml">Wayback Machine 存档的出版者 HTML，2026-02-14 14:07:59 UTC</a><div class="source-note">快照来源；用于元数据与逐节阅读定位。本导读不会把历史快照表述为当前实时页面。</div></div><div class="lang-block" lang="en" data-id="source-s2"><span class="source-id">S2</span><a href="https://web.archive.org/web/20260214140759/https://journals.ametsoc.org/view/journals/clim/24/3/2010jcli3731.1.xml">Publisher HTML as archived by the Wayback Machine, 2026-02-14 14:07:59 UTC</a><div class="source-note">Snapshot provenance; used for metadata and section-aligned reading. The snapshot is not presented as the live page.</div></div></div></li>
+        <li id="src-u1"><div class="pair"><div class="lang-block" lang="zh-CN" data-id="source-u1"><span class="source-id">U1</span><a href="https://doi.org/10.1038/nature18640">Ma 等（2016），Western boundary currents regulated by interaction between ocean eddies and the atmosphere，Nature，DOI 10.1038/nature18640</a><div class="source-note">用户指定的上游引用来源：正文末段与参考文献 5；用于解释目标论文在该引文组合中支持的命题。</div></div><div class="lang-block" lang="en" data-id="source-u1"><span class="source-id">U1</span><a href="https://doi.org/10.1038/nature18640">Ma et al. (2016), “Western boundary currents regulated by interaction between ocean eddies and the atmosphere”, Nature, DOI 10.1038/nature18640</a><div class="source-note">User-specified citing source: final main-text section and reference 5; used to explain the proposition supported by the target paper in that citation group.</div></div></div></li>
+      </ol>
+      <div class="pair card soft">
+        <div class="lang-block" lang="zh-CN" data-id="source-rights"><p class="callout warning"><strong>权利范围：</strong>目标论文页面与 PDF 为 AMS 版权材料，且检索记录未提供开放许可。本页仅作为可公开发布的分析性导读；访问 DOI 可能受订阅或出版者条件限制。若需原文，请通过 DOI 使用合法机构或个人访问渠道。</p></div>
+        <div class="lang-block" lang="en" data-id="source-rights"><p class="callout warning"><strong>Rights scope:</strong> The target publisher page and PDF are AMS-copyrighted, and the retrieved record provides no open license. This page is a publishable analytical guide only; DOI access may be subject to subscription or publisher terms. Use lawful institutional or personal access for the source article.</p></div>
+      </div>
+    </section>
+  </main>
+</div>
+
+<footer>
+  <div class="pair">
+    <div class="lang-block" lang="zh-CN" data-id="footer-provenance">离线单页 · 无外部运行时依赖 · 不含原论文图件 · 学术导读而非全文翻译</div>
+    <div class="lang-block" lang="en" data-id="footer-provenance">Offline single page · no external runtime dependencies · no source figures · scholarly guide, not full-text translation</div>
+  </div>
+</footer>
+<noscript><div class="noscript">JavaScript 已禁用：中文内容仍可阅读；语言切换不可用。 / JavaScript is disabled: Chinese remains readable; switching is unavailable.</div></noscript>
+<script>
+(() => {
+  const root = document.documentElement;
+  const status = document.getElementById('modeStatus');
+  const labels = {zh:'中文',dual:'中英对照',en:'English'};
+  const setMode = mode => {
+    if (!Object.hasOwn(labels, mode)) return;
+    root.dataset.mode = mode;
+    root.lang = mode === 'en' ? 'en' : 'zh-CN';
+    status.textContent = labels[mode];
+    document.querySelectorAll('[data-set-mode]').forEach(button => {
+      button.setAttribute('aria-pressed', String(button.dataset.setMode === mode));
+    });
+  };
+  document.querySelectorAll('[data-set-mode]').forEach(button => {
+    button.addEventListener('click', () => setMode(button.dataset.setMode));
+  });
+  setMode('zh');
+})();
+</script>
+</body>
+</html>
