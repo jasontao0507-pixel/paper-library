@@ -10,6 +10,12 @@ Jason 的个人论文网页库，共 50 份文档。
 
 图片保持原始字节与清晰度。部分内嵌图片独立为可缓存的资源，以减少手机首次解析正文的负担。此网站是在线书架，未启用离线缓存服务。
 
+## 逐句对照校正（2026-10-03）
+
+已统一检查 50 份文档的句界与中英配对，调整其中 30 份，新增 2,309 组对照单元。段落改为按原文句子配对；表格、标题、公式及参考文献保留各自的语义单位。核查中发现的明确错配、误译和经官方 PDF 确认的跨栏抽取错误已修复。这次是现有书架的句对齐校正，不代表对所有论文重新做过整篇翻译或逐页 PDF 审译。
+
+一个旧题名与正文不一致的重复条目已在首页标注，暂保留原入口供核对。
+
 ## 后续维护
 
 首页样式和交互位于 `shelf.css`、`shelf.js`，阅读层位于 `mobile-reader.css`、`mobile-reader.js`。新增阅读页应包含：
@@ -17,7 +23,7 @@ Jason 的个人论文网页库，共 50 份文档。
 ```html
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <link rel="stylesheet" href="../../mobile-reader.css?v=20261002">
-<script defer src="../../mobile-reader.js?v=20261002"></script>
+<script defer src="../../mobile-reader.js?v=20261003"></script>
 ```
 
 `structures-and-mechanisms-of-the-northward-propagating-boreal-summer-intraseasonal-oscilla-f4463da5` 保留原有的严格内容安全策略，其阅读层与图片采用内嵌方式；更新共享阅读层时须同步该页的内嵌副本。其他阅读页共享外部资源。

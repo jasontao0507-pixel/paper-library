@@ -135,7 +135,11 @@
   const tocList = element('ol', 'reader-toc-list');
   tocPanel.dialog.append(tocList);
   const headingSelector = 'h2, h3, .h2, .h3, .section-heading, .pair.heading, .pair.heading-pair, .pair.pair-heading, .pair.kind-heading, .pair.type-heading, .pair.type-subheading, .pair.subheading, .pair.subheading-pair, .pair[data-kind="heading"], .pair[data-kind="h2"], .pair[data-kind="h3"], .pair[data-id^="h-"]';
-  const headings = Array.from(document.querySelectorAll(headingSelector)).filter(node => !node.closest('.reader-dialog, nav, aside') && !node.parentElement.closest(headingSelector));
+  const headings = Array.from(document.querySelectorAll(headingSelector)).filter(node => {
+    // Legacy source IDs such as h-001-p01 identify paragraphs, not headings.
+    if (node.matches('.pair[data-id^="h-"]') && /-p\d/.test(node.dataset.id || '')) return false;
+    return !node.closest('.reader-dialog, nav, aside') && !node.parentElement.closest(headingSelector);
+  });
   headings.forEach((heading, index) => {
     if (!heading.id) heading.id = 'reader-section-' + (index + 1);
     heading.classList.add('reader-heading');
